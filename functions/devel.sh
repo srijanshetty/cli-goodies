@@ -14,3 +14,6 @@ function server() {
 
     # python -m SimpleHTTPServer "$port"
 }
+
+alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
+export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
