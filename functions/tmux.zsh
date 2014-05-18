@@ -1,7 +1,7 @@
 # Startup configuration for tmux
 function startt() {
     case $1 in
-        "home")
+        "proxy")
             # Create a new tmux-session
             tmux new-session -d -s home -n firewall
 

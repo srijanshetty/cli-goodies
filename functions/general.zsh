@@ -24,7 +24,7 @@ function scheme() {
 
 # This changes the apt-get sources
 function apt-source() {
-    case $1 in 
+    case $1 in
         -l | --list )
             ls /etc/apt/ | grep 'sources.list.*';;
         -c | --change)
@@ -43,4 +43,9 @@ function apt-source() {
 # Create a folder and cd into it
 function md() {
     mkdir $1 && cd $1
+}
+
+# To get the value of error codes
+function errorcode() {
+    python -c "import os; print os.strerror($1)";
 }
