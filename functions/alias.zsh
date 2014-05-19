@@ -4,16 +4,17 @@ export DOTDIR="~/Documents/dotfiles"
 # Some awesomeness
 alias nyan="telnet miku.acm.uiuc.edu"
 
-#colorize every grep
+# colorize every grep
 alias grep="grep --color"
 
-#colored cat
+# colored cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-#For cut copy operations
-alias xclip="xclip -selection c"
+# For cut copy operations
+alias xcopy="xclip -selection c"
+alias xpaste="xclip -selection c -o"
 
-#Put a copy of the GNU GPL LICENSE
+# Put a copy of the GNU GPL LICENSE
 alias gpl="wget http://www.gnu.org/licenses/gpl.txt -O LICENSE"
 
 # Print json
