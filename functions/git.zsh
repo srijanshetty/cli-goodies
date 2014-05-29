@@ -6,7 +6,6 @@ alias gt="git tag"
 alias gcm="git commit -m"
 alias gc="git checkout"
 alias gb="git branch"
-alias ack="ack-grep"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
