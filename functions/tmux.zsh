@@ -1,42 +1,60 @@
 # Startup configuration for tmux
 function startt() {
     case $1 in
-        "proxy")
+        "iitk")
             # Create a new tmux-session
-            tmux new-session -d -s home -n firewall
+            SESSION="firewall"
+            tmux -2 new-session -d -s $SESSION
 
             # Create the windows
-            # tmux new-window -t home:2 -n IRC
-            tmux new-window -t home:2
-            # tmux new-window -t home:3
+            tmux rename-window -t $SESSION:1 firewall
 
             # Start defualt programs in them
-            tmux send-keys -t home:1 "auth" C-m
+            tmux send-keys -t $SESSION:1 "auth" C-m
 
-            # Attach the session and select a default window
-            tmux select-window -t home:3
-            tmux attach-session -t home
-            ;;
+            # Create another tmux-sesion for working
+            SESSION=$(basename $PWD)
+            tmux -2 new-session -d -s $SESSION
 
-        "compilers")
-            # Create a new tmux-session
-            tmux new-session -d -s compilers -n editor
+            # General purpose
+            tmux rename-window -t $SESSION:1 general-purpose
+            tmux split-window -h
 
-            # Create the windows
-            tmux new-window -t compilers:2 -n Test
+            # The vim window
+            tmux new-window -t $SESSION -a -n vim
+            tmux split-window -h
+            tmux select-pane -t 1
+            tmux resize-pane -R 30
 
-            # Start defualt programs in them
-            tmux send-keys -t compilers:1 "vim" C-m
-
-            # Split the windows
-            tmux select-window -t compilers:2
-            tmux split-window -h -t compilers:2
-
-            # Select a default window
-            tmux select-window -t compilers:1
+            # An empty window
+            tmux new-window -t $SESSION -a
 
             # Attach the session
-            tmux attach-session -t compilers
+            tmux select-window -t $SESSION:3
+            tmux attach -t $SESSION
+            ;;
+
+        "project")
+            # Create another tmux-sesion for working
+            SESSION=$(basename $PWD)
+            tmux -2 new-session -d -s $SESSION
+
+            # General purpose
+            tmux rename-window -t $SESSION:1 general-purpose
+            tmux split-window -h
+
+            # The vim window
+            tmux new-window -t $SESSION -a -n vim
+            tmux split-window -h
+            tmux select-pane -t 1
+            tmux resize-pane -R 30
+
+            # An empty window
+            tmux new-window -t $SESSION -a
+
+            # Attach the session
+            tmux select-window -t $SESSION:3
+            tmux attach -t $SESSION
             ;;
     esac
 }

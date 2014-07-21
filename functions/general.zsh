@@ -6,20 +6,22 @@
 # Solarize the terminal
 eval `dircolors ~/.dircolors-light`
 
+# for changing the color scheme
 # A variable to maintain the state of the color scheme
 export scheme=1
 
-alias solarize="${DOTDIR}/shells/solarize/solarize"
+alias solarize_light="${DOTDIR}/shells/solarize/install.sh -s light -p Solarized"
+alias solarize_dark="${DOTDIR}/shells/solarize/install.sh -s dark -p Solarized"
 
-# for changing the color scheme
 function scheme() {
     export scheme=$(( (scheme+1)%2 ))
     if [ $scheme -eq "0" ]; then
        eval `dircolors ~/.dircolors-dark`
+       solarize_dark
     else
        eval `dircolors ~/.dircolors-light`
+       solarize_light
     fi
-    solarize
 }
 
 # This changes the apt-get sources
