@@ -3,6 +3,9 @@
 alias ip="curl ifconfig.me"
 alias bower='noglob bower'
 
+# Set the nvm directory
+NVM_DIR=~/.nvm
+
 # Taken for @addyosmani's dotfiles
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
