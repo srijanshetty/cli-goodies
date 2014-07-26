@@ -21,3 +21,6 @@ function server() {
 # For chromium
 alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
 export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
+
+# nvm
+[ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
