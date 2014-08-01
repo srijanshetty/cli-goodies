@@ -51,3 +51,7 @@ function md() {
 function errorcode() {
     python -c "import os; print os.strerror($1)";
 }
+
+function sdp() {
+    tar cvzf - $1 | ssh $2 'tar xzf -'
+}
