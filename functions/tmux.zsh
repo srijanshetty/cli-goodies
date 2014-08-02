@@ -1,6 +1,38 @@
 # Startup configuration for tmux
 function startt() {
     case $1 in
+        "mwos")
+            # Create a new tmux-session
+            SESSION="firewall"
+            tmux -2 new-session -d -s $SESSION
+
+            # Create the windows
+            tmux rename-window -t $SESSION:1 firewall
+
+            # Start defualt programs in them
+            tmux send-keys -t $SESSION:1 "auth" C-m
+
+            # Create another tmux-sesion for working
+            SESSION="MWOS"
+            tmux -2 new-session -d -s $SESSION
+
+            # General purpose
+            tmux rename-window -t $SESSION:1 general-purpose
+            tmux split-window -h
+            tmux select-pane -t 1
+            tmux resize-pane -R 30
+
+            # The vim window
+            tmux new-window -t $SESSION -a -n vim
+
+            # An empty window
+            tmux new-window -t $SESSION -a -n irc 'irssi'
+
+            # Attach the session
+            tmux select-window -t $SESSION:3
+            tmux attach -t $SESSION
+            ;;
+
         "iitk")
             # Create a new tmux-session
             SESSION="firewall"
