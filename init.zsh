@@ -9,3 +9,6 @@ done
 for file in $(ls "${0:h}/external"); do
     source "${0:h}/external/$file"
 done
+
+# Add zsh-completions to $fpath.
+fpath=("${0:h}/completions" $fpath)

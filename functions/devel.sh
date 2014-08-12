@@ -3,9 +3,6 @@
 alias ip="curl ifconfig.me"
 alias bower='noglob bower'
 
-# Set the nvm directory
-NVM_DIR=~/.nvm
-
 # Taken for @addyosmani's dotfiles
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
@@ -22,5 +19,9 @@ function server() {
 alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
 export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
 
+# Set the nvm directory
+NVM_DIR=~/.nvm
+
 # nvm
 [ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
+nvm use v0.10 &> /dev/null
