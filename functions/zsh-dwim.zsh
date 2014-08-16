@@ -15,3 +15,6 @@ _dwim_add_transform '^rm -rf' \
 ## cp -> cp -R
 _dwim_add_transform '^cp ' \
   '_dwim_sed "s/^cp /cp -R /"'
+
+_dwim_add_transform '^git clone ' \
+  '_dwim_sed "s/^git clone /git clone --recursive /"'
