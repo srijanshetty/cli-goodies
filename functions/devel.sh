@@ -24,4 +24,3 @@ NVM_DIR=~/.nvm
 
 # nvm
 [ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
-nvm use v0.10 &> /dev/null
