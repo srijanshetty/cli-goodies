@@ -24,3 +24,9 @@ NVM_DIR=~/.nvm
 
 # nvm
 [ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
+
+#pastebin
+pastebin() {
+    curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
+}
+
