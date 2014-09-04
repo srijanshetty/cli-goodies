@@ -21,6 +21,7 @@ export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sa
 
 # Set the nvm directory
 NVM_DIR=~/.nvm
+# add default node version
 
 # nvm
 [ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
