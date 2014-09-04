@@ -19,3 +19,5 @@ alias gpl="wget http://www.gnu.org/licenses/gpl.txt -O LICENSE"
 
 # Print json
 alias json="underscore --color print --in"
+
+alias m="id3tool"
