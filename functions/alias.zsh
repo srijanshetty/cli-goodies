@@ -14,10 +14,11 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 alias xcopy="xclip -selection c"
 alias xpaste="xclip -selection c -o"
 
-# Put a copy of the GNU GPL LICENSE
-alias gpl="wget http://www.gnu.org/licenses/gpl.txt -O LICENSE"
-
 # Print json
 alias json="underscore --color print --in"
 
-alias m="id3tool"
+# Music tagging
+alias id3="id3tool"
+
+# autostart
+alias autostart="$DOTDIR/scripts/autostart.sh"
