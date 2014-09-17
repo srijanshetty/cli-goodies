@@ -11,4 +11,7 @@ for file in $(ls "${0:h}/external"); do
 done
 
 # Add zsh-completions to $fpath.
-fpath=("${0:h}/completions" $fpath)
+fpath=("${0:h}/completion" $fpath)
+
+# Load and initialize the completion system ignoring insecure directories.
+autoload -Uz compinit && compinit -i
