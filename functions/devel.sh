@@ -3,6 +3,11 @@
 alias ip="curl ifconfig.me"
 alias bower='noglob bower'
 
+#pastebin
+pastebin() {
+    curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
+}
+
 # Taken for @addyosmani's dotfiles
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
@@ -21,13 +26,8 @@ export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sa
 
 # Set the nvm directory
 NVM_DIR=~/.nvm
-# add default node version
 
 # nvm
 [ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
 
-#pastebin
-pastebin() {
-    curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
-}
-
+source ~/.rvm/scripts/rvm
