@@ -20,4 +20,8 @@ _dwim_add_transform '^cp ' \
 _dwim_add_transform '^git clone ' \
   '_dwim_sed "s/^git clone /git clone --recursive /"'
 
+## mkdir -p -> sudo mkdir -p
+_dwim_add_transform '^mkdir -p ' \
+  '_dwim_sed "s/^mkdir /sudo mkdir /"'
+
 # _dwim_add_transform '^mv' \
