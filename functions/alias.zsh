@@ -19,6 +19,3 @@ alias json="underscore --color print --in"
 
 # Music tagging
 alias id3="id3tool"
-
-# autostart
-alias autostart="$DOTDIR/scripts/autostart.sh"
