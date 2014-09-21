@@ -1,33 +1,11 @@
 #!/bin/zsh
 
-alias ip="curl ifconfig.me"
-alias bower='noglob bower'
-
 #pastebin
-pastebin() {
+function pastebin() {
     curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
-}
-
-# Taken for @addyosmani's dotfiles
-# Start an HTTP server from a directory, optionally specifying the port
-function server() {
-    local port="${1:-8000}"
-    o "http://localhost:${port}/"
-    # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
-    # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
-    python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
-
-    # python -m SimpleHTTPServer "$port"
 }
 
 # For chromium
 alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
 export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
 
-# Set the nvm directory
-NVM_DIR=~/.nvm
-
-# nvm
-[ -s "/home/srijan/.nvm/nvm.sh" ] && . "/home/srijan/.nvm/nvm.sh" # This loads nvm
-
-source ~/.rvm/scripts/rvm

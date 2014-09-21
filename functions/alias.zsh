@@ -14,8 +14,9 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 alias xcopy="xclip -selection c"
 alias xpaste="xclip -selection c -o"
 
-# Print json
-alias json="underscore --color print --in"
-
 # Music tagging
 alias id3="id3tool"
+
+# Bower needs this
+alias bower='noglob bower'
+
