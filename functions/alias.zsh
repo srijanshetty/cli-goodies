@@ -1,9 +1,6 @@
 # Export the DOTDIR directory variable for use by other modules
 export DOTDIR="~/Documents/dotfiles"
 
-# Some awesomeness
-alias nyan="telnet miku.acm.uiuc.edu"
-
 # colorize every grep
 alias grep="grep --color"
 
