@@ -15,3 +15,8 @@ export PATH=$PATH:$GOPATH/bin
 
 # Cabal
 export PATH=$PATH:~/.cabal/bin
+
+# https://transfer.sh/
+function upload() {
+    curl --upload-file $1 "http://transfer.sh/${2}"
+}
