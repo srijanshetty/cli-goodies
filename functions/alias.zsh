@@ -1,7 +1,10 @@
 # Export the DOTDIR directory variable for use by other modules
 export DOTDIR=~/Documents/dotfiles
-export LOCAL_BIN=~/Documents/local/bin
 export GITHUB_DIR=~/Documents/GitHub
+
+# export local bin
+export LOCAL_BIN=~/Documents/local/bin
+export PATH=$PATH:$LOCAL_BIN
 
 # colorize every grep
 alias grep="grep --color"
