@@ -31,24 +31,6 @@ function sdp() {
     tar cvzf - $1 | ssh $2 'tar xzf -'
 }
 
-# This changes the apt-get sources
-function apt-source() {
-    case $1 in
-        -l | --list )
-            ls /etc/apt/ | grep 'sources.list.*';;
-        -c | --change)
-            cd /etc/apt
-            if [ -f sources.list.$2 ];then
-                sudo mv sources.list sources.list.backup
-                sudo cp sources.list.$2 sources.list
-                sudo apt-get update
-            else
-                echo "No such source file exists"
-            fi
-            cd -
-    esac
-}
-
 # Set and unset proxy
 function proxy() {
     case $1 in
@@ -73,3 +55,12 @@ function server() {
     # python -m SimpleHTTPServer "$port"
 }
 
+#pastebin
+function pastebin() {
+    curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
+}
+
+# https://transfer.sh/
+function transfer() {
+    curl --upload-file $1 "http://transfer.sh/${1}"
+}
