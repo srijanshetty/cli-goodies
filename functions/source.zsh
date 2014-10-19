@@ -4,7 +4,7 @@
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
 # source proxy configuration
-. ~/.proxyrc
+# . ~/.proxyrc
 
 # Colors :D
 eval `dircolors ~/.dircolors-light`
