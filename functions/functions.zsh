@@ -37,6 +37,9 @@ function proxy() {
         u|unset)
             unset {http,https,ftp,socks,rvm}_proxy
             ;;
+        s|status)
+            env | grep proxy
+            ;;
         *)
             source ~/.proxyrc
             ;;
