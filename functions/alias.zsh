@@ -22,3 +22,6 @@ alias id3="id3tool"
 # Bower needs this
 alias bower='noglob bower'
 
+# vim -> gvim
+alias vim="gvim"
+alias vi="gvim"
