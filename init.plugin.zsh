@@ -6,9 +6,11 @@ for file in $(ls "${0:h}/functions"); do
 done
 
 # For any external imported files
-for file in $(ls "${0:h}/external"); do
-    source "${0:h}/external/$file"
-done
+if [ -e "${0:h}/external" ]; then
+    for file in $(ls "${0:h}/external"); do
+        source "${0:h}/external/$file"
+    done
+fi
 
 # Add zsh-completions to $fpath.
 fpath=("${0:h}/completion" $fpath)
