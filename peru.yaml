@@ -1,0 +1,6 @@
+imports:
+    beets: completion
+
+git module beets:
+    url: https://github.com/sampsyo/beets
+    files: extra/_beet
