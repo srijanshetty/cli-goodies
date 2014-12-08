@@ -20,14 +20,14 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Source every file in custom
-for file in $(ls "${0:h}/functions"); do
-    source "${0:h}/functions/$file"
+for file in ${0:h}/functions/**/*(.); do
+    source "$file"
 done
 
 # For any external imported files
 if [ -e "${0:h}/external" ]; then
-    for file in $(ls "${0:h}/external"); do
-        source "${0:h}/external/$file"
+    for file in ${0:h}/external/**/*(.); do
+        source "$file"
     done
 fi
 
