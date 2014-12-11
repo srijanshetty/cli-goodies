@@ -22,8 +22,10 @@ export DOTDIR=~/Documents/dotfiles
 export GITHUB_DIR=~/Documents/GitHub
 
 # export local bin
-export LOCAL_BIN=~/Documents/local/bin
+export LOCAL_ROOT=~/Documents/local
+export LOCAL_BIN=${LOCAL_ROOT}/bin
 export PATH=$PATH:$LOCAL_BIN
+export MANPATH=${LOCAL_BIN}/share/man:$MANPATH
 
 # colorize every grep
 alias grep="grep --color"
