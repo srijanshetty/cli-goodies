@@ -34,5 +34,9 @@ fi
 # Add zsh-completions to $fpath.
 fpath=("${0:h}/completion" $fpath)
 
+# Add the scripts folder to PATH
+PLUGIN_D="$(dirname $0)"
+export PATH="${PATH}:${PLUGIN_D}/scripts"
+
 # Load and initialize the completion system ignoring insecure directories.
 autoload -Uz compinit && compinit -i
