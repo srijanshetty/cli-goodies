@@ -19,24 +19,24 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Source every file in custom
+# Source files in functions directory
 for file in ${0:h}/functions/**/*(.); do
     source "$file"
 done
 
-# For any external imported files
+# File that have been taken from other git repos
 if [ -e "${0:h}/external" ]; then
     for file in ${0:h}/external/**/*(.); do
         source "$file"
     done
 fi
 
-# Add zsh-completions to $fpath.
-fpath=("${0:h}/completion" $fpath)
-
 # Add the scripts folder to PATH
 PLUGIN_D="$(dirname $0)"
 export PATH="${PATH}:${PLUGIN_D}/scripts"
+
+# Add completions to $fpath.
+fpath=("${0:h}/completion" $fpath)
 
 # Load and initialize the completion system ignoring insecure directories.
 autoload -Uz compinit && compinit -i
