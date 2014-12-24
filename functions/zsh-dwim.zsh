@@ -31,6 +31,10 @@ _dwim_add_transform '^rm -f' \
 _dwim_add_transform '^rm -rf' \
   '_dwim_sed "s/^rm -rf /sudo rm -rf /"'
 
+## git rm -> git rm -r
+_dwim_add_transform '^git rm' \
+  '_dwim_sed "s/^git rm /git rm -r /"'
+
 ## cp -> cp -R
 _dwim_add_transform '^cp ' \
   '_dwim_sed "s/^cp /cp -R /"'
@@ -43,4 +47,6 @@ _dwim_add_transform '^git clone ' \
 _dwim_add_transform '^mkdir -p ' \
   '_dwim_sed "s/^mkdir /sudo mkdir /"'
 
-# _dwim_add_transform '^mv' \
+# mv $1 $2 -> cd $2
+_dwim_add_transform '^mv ' \
+  '_dwim_sed "s/^mv.*/cd \!\$/"'
