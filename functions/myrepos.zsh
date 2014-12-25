@@ -1,7 +1,6 @@
 #!/bin/zsh
 
 function repos() {
-    setopt NOCLOBBER
     CURRENT_DIR=${PWD}
 
     function _repos-help() {
@@ -51,7 +50,4 @@ _EOH_
 
     # Jump back to the directory from where we started
     cd "$CURRENT_DIR"
-
-    # Disable local options
-    unsetopt NOCLOBBER
 }
