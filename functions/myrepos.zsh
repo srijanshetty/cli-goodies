@@ -19,6 +19,10 @@ COMMAND:
 _EOH_
     }
 
+    function _file-check() {
+        [[ -e ~/.config/mr/available.d/"$1" ]]
+    }
+
     function _repos-list() {
         ls ~/.config/mr/config.d
     }
@@ -28,7 +32,7 @@ _EOH_
     }
 
     function _repos-enable() {
-        cd ~/.config/mr/config.d/ && ln -s "../available.d/$1" .
+        _file-check "$1" && cd ~/.config/mr/config.d/ && ln -s "../available.d/$1" .
     }
 
     function _repos-disable() {
