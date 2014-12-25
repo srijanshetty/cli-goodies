@@ -49,10 +49,10 @@ _EOH_
     }
 
     case "$1" in
-        l | list)           _repos-list;;
+        ls | list)           _repos-list;;
         e | enable)         _repos-enable "$2";;
         d | disable)        _repos-disable "$2";;
-        a | avaliable)      _repos-avaliable;;
+        a | avaliable)      _repos-available;;
         ag | add-git)       _repos-add-git "$2";;
         o | only)           _repos-only "$2";;
         *)                  _repos-help;;
