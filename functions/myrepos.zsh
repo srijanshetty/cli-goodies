@@ -15,6 +15,7 @@ COMMAND:
     disable         diable a configuration
     enable          enable a configuration
     list            list current configurations
+    only            only enable one configuration
 
 _EOH_
     }
@@ -43,12 +44,17 @@ _EOH_
         sed "s|REPO_NAME|$1|g" ~/.config/mr/available.d/template.vcsh > ~/.config/mr/available.d/"${1}".vcsh
     }
 
+    function _repos-only() {
+        _file-check "$1" && /bin/rm -f ~/.config/mr/config.d/* && _repos-enable "$1"
+    }
+
     case "$1" in
         l | list)           _repos-list;;
         e | enable)         _repos-enable "$2";;
         d | disable)        _repos-disable "$2";;
         a | avaliable)      _repos-avaliable;;
         ag | add-git)       _repos-add-git "$2";;
+        o | only)           _repos-only "$2";;
         *)                  _repos-help;;
     esac
 
