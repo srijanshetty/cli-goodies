@@ -10,7 +10,8 @@ USAGE: repos <command> [arguments]
 
 COMMAND:
 
-    add-git         add a git configuration
+    add-git         add a github configuration
+    add-bit         add a bitbucket configuration
     available       list available configurations
     disable         diable a configuration
     enable          enable a configuration
@@ -41,7 +42,11 @@ _EOH_
     }
 
     function _repos-add-git() {
-        sed "s|REPO_NAME|$1|g" ~/.config/mr/available.d/template.vcsh > ~/.config/mr/available.d/"${1}".vcsh
+        sed "s|REPO_NAME|$1|g" ~/.config/mr/available.d/template-github.vcsh > ~/.config/mr/available.d/"${1}".vcsh
+    }
+
+    function _repos-add-bit() {
+        sed "s|REPO_NAME|$1|g" ~/.config/mr/available.d/template-bitbucket.vcsh > ~/.config/mr/available.d/"${1}".vcsh
     }
 
     function _repos-only() {
@@ -54,6 +59,7 @@ _EOH_
         d | disable)        _repos-disable "$2";;
         a | avaliable)      _repos-available;;
         ag | add-git)       _repos-add-git "$2";;
+        ab | add-bit)       _repos-add-bit "$2";;
         o | only)           _repos-only "$2";;
         *)                  _repos-help;;
     esac
