@@ -40,3 +40,7 @@ alias bower='noglob bower'
 # vim -> gvim
 alias vim="gvim"
 alias vi="gvim"
+
+# vcsh specific aliases
+alias vs="vcsh status"
+alias v="vcsh"
