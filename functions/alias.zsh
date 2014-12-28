@@ -17,15 +17,9 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Export the DOTDIR directory variable for use by other modules
-export DOTDIR=~/Documents/dotfiles
-export GITHUB_DIR=~/Documents/GitHub
-
 # export local bin
-export LOCAL_ROOT=~/Documents/local
-export LOCAL_BIN=${LOCAL_ROOT}/bin
+export LOCAL_BIN=~/Documents/local/bin
 export PATH=$PATH:$LOCAL_BIN
-export MANPATH=${LOCAL_BIN}/share/man:$MANPATH
 
 # colorize every grep
 alias grep="grep --color"
