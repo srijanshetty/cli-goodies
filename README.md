@@ -12,6 +12,7 @@ Organization
 - **functions.zsh**: Useful functions
 - **fun.zsh**: Miscellaneous fun utilities
 - **git.zsh**: Git relevant utilities
+- **myrepos.zsh**: wrapper functions for mr
 - **source.zsh**: Things that need to be sourced
 - **tmux.zsh**: Tmux environments
 - **zsh-dwim.zsh**: dwim transformations
@@ -23,5 +24,3 @@ This needs to go, waiting for the project owners to make each of them available 
 project.
 
 - beets : from their official repo
-
-
