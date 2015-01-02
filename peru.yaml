@@ -1,0 +1,14 @@
+imports:
+    beets: completion
+    hub: completion
+
+curl module beets:
+    url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
+    sha1: c0bc74c40e7287fdc93831a3d9a42a4a57c9d0a1
+
+curl module hub:
+    url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
+    build: mv hub.zsh_completion _hub
+    sha1: 607c202f89635e636708d7dc68f5079bf0597254
+
+
