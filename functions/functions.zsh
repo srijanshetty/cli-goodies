@@ -23,11 +23,11 @@
 function lip() {
     IP=$(ifconfig wlan0 | grep 'inet ' | awk '{print $2}' | awk -F : '{print $2}')
 
-    if [ -n "$IP"]; then
+    if [ -n "$IP" ]; then
         IP=$(ifconfig eth0 | grep 'inet ' | awk '{print $2}' | awk -F : '{print $2}')
     fi
 
-    echo $IP
+    echo "$IP"
 }
 
 # function for global-ip
@@ -37,7 +37,7 @@ function gip() {
 
 # Create a folder and cd into it
 function md() {
-    mkdir $1 && cd $1
+    mkdir "$1" && cd "$1"
 }
 
 # To get the value of error codes
@@ -47,7 +47,7 @@ function errorcode() {
 
 # send a directory
 function sdp() {
-    tar cvzf - $1 | ssh $2 'tar xzf -'
+    tar cvzf - "$1" | ssh "$2" 'tar xzf -'
 }
 
 # Set and unset proxy
@@ -84,12 +84,12 @@ function pastebin() {
 
 # https://transfer.sh/
 function transfer() {
-    curl --upload-file $1 "http://transfer.sh/${1}"
+    curl --upload-file "$1" "http://transfer.sh/${1}"
 }
 
 # Check the directories which are not included in mr
 function check-mr() {
     for file in $(ls); do
-        cat ~/.mrconfig | grep $file &>/dev/null || echo $file;
+        < ~/.mrconfig grep "$file" &>/dev/null || echo "$file";
     done
 }

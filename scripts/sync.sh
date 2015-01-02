@@ -7,6 +7,6 @@ files=(./$1/*)
 if [ ${#files[@]} -gt 0 ]; then
     rsync "$1/" "$2/" -a --copy-links -v
     for file in "${files[@]}"; do
-        rm -f $file
+        rm -f "$file"
     done
 fi
