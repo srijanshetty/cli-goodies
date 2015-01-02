@@ -17,10 +17,6 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# export local bin
-export LOCAL_BIN=~/Documents/local/bin
-export PATH=$PATH:$LOCAL_BIN
-
 # colorize every grep
 alias grep="grep --color"
 
