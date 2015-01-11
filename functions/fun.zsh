@@ -20,4 +20,15 @@
 # Some awesomeness
 alias nyan="telnet miku.acm.uiuc.edu"
 alias cowcommit="wget -qO- http://whatthecommit.com/index.txt | cowsay"
+alias cowsay='cowsay -f $(ls /usr/share/cowsay/cows | sort -R | head -1)'
 
+# Show a clock
+function clock() {
+    watch -n1 "date '+%D%n%T'|figlet -k"
+}
+
+# Taken from http://www.commandlinefu.com/commands/view/6065/show-demo-of-toilet-fonts
+# List all toilet fonts
+function showtoiletfonts() {
+    find /usr/share/figlet -name "*.?lf" -exec basename {}  \; | sed -e "s/\..lf$//" | xargs -I{} toilet -f {} {}
+}
