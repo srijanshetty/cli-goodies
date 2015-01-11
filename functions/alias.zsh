@@ -39,4 +39,3 @@ alias vi="gvim"
 
 # vcsh specific aliases
 alias vs="vcsh status"
-alias v="vcsh"
