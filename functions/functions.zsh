@@ -86,10 +86,3 @@ function pastebin() {
 function transfer() {
     curl --upload-file "$1" "http://transfer.sh/${1}"
 }
-
-# Check the directories which are not included in mr
-function check-mr() {
-    for file in $(ls); do
-        < ~/.mrconfig grep "$file" &>/dev/null || echo "$file";
-    done
-}
