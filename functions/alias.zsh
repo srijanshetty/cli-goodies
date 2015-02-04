@@ -39,3 +39,5 @@ alias vi="gvim"
 
 # vcsh specific aliases
 alias vs="vcsh status"
+
+alias ls="ls --color --group-directories-first"
