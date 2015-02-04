@@ -1,0 +1,17 @@
+#compdef repos
+
+typeset -A opt_args
+local context state line
+
+_arguments -s -S \
+    '--add-git[add a github configuration]'\
+    '--add-bit[add a bitbucket configuration]'\
+    '--available[List all available configurations.]'\
+    '--check[list all repos not in mrconfig]'\
+    '--disable[disable given configuration]'\
+    '--enable[enable given configuration]'\
+    '--list[list current configurations]'\
+    '--only[only enable a configuration]'\
+    && return 0
+
+    return 1

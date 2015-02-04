@@ -1,3 +1,4 @@
 .peru
 external
 completion
+!.completion/_repos
