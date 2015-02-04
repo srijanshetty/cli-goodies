@@ -50,3 +50,7 @@ _dwim_add_transform '^mkdir -p ' \
 # mv $1 $2 -> cd $2
 _dwim_add_transform '^mv ' \
   '_dwim_sed "s/^mv.*/cd \!\$/"'
+
+# gd -> ga
+_dwim_add_transform '^gd ' \
+  '_dwim_sed "s/^gd /ga /"'
