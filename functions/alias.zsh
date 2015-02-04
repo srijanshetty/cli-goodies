@@ -40,4 +40,8 @@ alias vi="gvim"
 # vcsh specific aliases
 alias vs="vcsh status"
 
+# Make ls output colored
 alias ls="ls --color --group-directories-first"
+
+# Alias open
+alias o="xdg-open"
