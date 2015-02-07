@@ -13,6 +13,7 @@ Organization
 - **fun.zsh**: Miscellaneous fun utilities
 - **git.zsh**: Git relevant utilities
 - **myrepos.zsh**: wrapper functions for mr
+- **options.zsh**: Common configuration options
 - **source.zsh**: Things that need to be sourced
 - **tmux.zsh**: Tmux environments
 - **zsh-dwim.zsh**: dwim transformations
