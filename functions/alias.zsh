@@ -45,3 +45,39 @@ alias ls="ls --color --group-directories-first"
 
 # Alias open
 alias o="xdg-open"
+
+# Correct commands.
+setopt CORRECT
+
+# Disable correction.
+alias ack='nocorrect ack'
+alias cd='nocorrect cd'
+alias cp='nocorrect cp'
+alias gcc='nocorrect gcc'
+alias grep='nocorrect grep'
+alias heroku='nocorrect heroku'
+alias ln='nocorrect ln'
+alias man='nocorrect man'
+alias mkdir='nocorrect mkdir'
+alias mv='nocorrect mv'
+alias mysql='nocorrect mysql'
+alias rm='nocorrect rm'
+
+# Define general aliases.
+alias cp="cp -i"
+alias rm="rm -i"
+
+# Define colors for the completion system.
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
+
+# Grep
+export GREP_COLORS="mt=$GREP_COLOR" # GNU.
+alias grep="grep --color=auto"
+
+# File Download
+alias get='curl --continue-at - --location --progress-bar --remote-name --remote-time'
+alias get='wget --continue --progress=bar --timestamping'
+
+# Resource Usage
+alias df='df -kh'
+alias du='du -kh'
