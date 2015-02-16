@@ -1,6 +1,4 @@
-#!/bin/zsh
-
-# Copyright (c) 2014 Srijan R Shetty <srijan.shetty+code@gmail.com>
+# Copyright (c) 2015 Srijan R Shetty <srijan.shetty+code@gmail.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
@@ -19,14 +17,14 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# source autojump configuration
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+# Define colors for the completion system.
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
-# source proxy configuration
-# . ~/.proxyrc
+# Grep
+export GREP_OPTIONS="--color=auto"
+export GREP_COLOR="1;35;40"
+export GREP_COLORS="mt=$GREP_COLOR"
 
-# mr
-[[ -s ~/.mrenv ]] && source ~/.mrenv
+# Colors :D
+eval `dircolors ~/.dircolors-light`
 
-# Check for the hub alias and then eval it
-hash hub && eval "$(hub alias -s)"
