@@ -27,6 +27,8 @@ alias gc="git checkout"
 alias gb="git branch"
 alias gr="git remote"
 alias gd="git diff"
+alias gp="git push"
+alias gst="git stash"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
