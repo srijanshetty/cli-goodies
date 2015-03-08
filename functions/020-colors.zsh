@@ -24,7 +24,3 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="1;35;40"
 export GREP_COLORS="mt=$GREP_COLOR"
-
-# Colors :D
-eval `dircolors ~/.dircolors-light`
-
