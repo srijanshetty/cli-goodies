@@ -23,6 +23,9 @@
 alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
 export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
 
+# List all global npm packages
+alias npm-list="npm list -g --depth 0"
+
 # Go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
