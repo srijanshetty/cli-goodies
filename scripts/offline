@@ -10,8 +10,9 @@ USAGE: offline <command> [arguments]
 
 COMMAND:
 
-    execute         Execute all offline comands
-    help            Show this help message
+    -l | list            List all the offline commands
+    -x | execute         Execute all offline comands
+    -h | help            Show this help message
 
 _EOH_
 }
