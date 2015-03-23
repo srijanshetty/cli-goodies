@@ -1,4 +1,5 @@
 .peru
 external
-completion
-!.completion/_repos
+completion/_beet
+completion/_hub
+
