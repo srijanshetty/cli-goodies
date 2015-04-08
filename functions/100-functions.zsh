@@ -40,16 +40,6 @@ function md() {
     mkdir "$1" && cd "$1"
 }
 
-# To get the value of error codes
-function errorcode() {
-    python -c "import os; print os.strerror($1)";
-}
-
-# send a directory
-function sdp() {
-    tar cvzf - "$1" | ssh "$2" 'tar xzf -'
-}
-
 # Set and unset proxy
 function proxy() {
     case $1 in
@@ -77,6 +67,18 @@ function server() {
     # python -m SimpleHTTPServer "$port"
 }
 
+######################################################################
+
+# To get the value of error codes
+function errorcode() {
+    python -c "import os; print os.strerror($1)";
+}
+
+# send a directory
+function sdp() {
+    tar cvzf - "$1" | ssh "$2" 'tar xzf -'
+}
+
 #pastebin
 function pastebin() {
     curl -F 'sprunge=<-' http://sprunge.us < "${1:-/dev/stdin}";
@@ -86,3 +88,4 @@ function pastebin() {
 function transfer() {
     curl --upload-file "$1" "http://transfer.sh/${1}"
 }
+
