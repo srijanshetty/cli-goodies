@@ -4,8 +4,6 @@ typeset -A opt_args
 local context state line
 
 _arguments -s -S \
-    '--add-git[add a github configuration]'\
-    '--add-bit[add a bitbucket configuration]'\
     '--available[List all available configurations.]'\
     '--check[list all repos not in mrconfig]'\
     '--disable[disable given configuration]'\
