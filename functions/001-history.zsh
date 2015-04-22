@@ -1,12 +1,4 @@
 #
-# Sets history options and defines history aliases.
-#
-# Authors:
-#   Robby Russell <robby@planetargon.com>
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-#
 # Variables
 #
 
@@ -37,6 +29,10 @@ setopt HIST_BEEP                 # Beep when accessing non-existent history.
 
 # Lists the ten most used commands.
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
+
+#
+# Functions
+#
 
 # Create the log if it does not exist
 [ ! -e "$HOME/.install-log" ] && touch "$HOME/.install-log"
