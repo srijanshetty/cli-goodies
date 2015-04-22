@@ -25,6 +25,9 @@
 # source proxy configuration
 # . ~/.proxyrc
 
+# source private functions
+[[ -s ~/.private.sh ]] && source ~/.private.sh
+
 # mr
 [[ -s ~/.mrenv ]] && source ~/.mrenv
 
