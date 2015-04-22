@@ -19,20 +19,27 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# For chromium
-alias chromium="/home/srijan/Documents/local/chrome-linux/chrome"
-export CHROME_DEVEL_SANDBOX="/home/srijan/Documents/local/chrome-linux/chrome_sandbox"
-
-# List all global npm packages
-alias npm-list="npm list -g --depth 0"
-
+#
 # Go
+#
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
+#
 # Cabal
+#
 export PATH=$PATH:~/.cabal/bin
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#
+# pyenv
+#
+if [[ -s "$HOME/.pyenv/bin/pyenv" ]]; then
+    path=("$HOME/.pyenv/bin" $path)
+    eval "$(pyenv init -)"
+fi
 
+#
+# node
+#
+# List all global npm packages
+alias npm-list="npm list -g --depth 0"
