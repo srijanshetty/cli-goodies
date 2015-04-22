@@ -43,3 +43,17 @@ fi
 #
 # List all global npm packages
 alias npm-list="npm list -g --depth 0"
+
+#
+# Ruby
+#
+# RVM should be the last thing that is loaded
+# Load RVM into the shell session.
+if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
+  # Unset AUTO_NAME_DIRS since auto adding variable-stored paths to ~ list
+  # conflicts with RVM.
+  unsetopt AUTO_NAME_DIRS
+
+  # Source RVM.
+  source "$HOME/.rvm/scripts/rvm"
+fi
