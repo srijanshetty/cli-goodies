@@ -12,6 +12,7 @@ COMMAND:
 
     -l | list            List all the offline commands
     -x | execute         Execute all offline comands
+    -r | remove          Clean the offline script
     -h | help            Show this help message
 
 _EOH_
@@ -19,6 +20,10 @@ _EOH_
 
 function _offline-list() {
     [ -e "$STORED_COMMANDS" ] && cat "$STORED_COMMANDS"
+}
+
+function _offline-remove() {
+    [ -e "$STORED_COMMANDS" ] && rm "$STORED_COMMANDS"
 }
 
 # Run all the commands in the given file
@@ -51,6 +56,7 @@ function _offline-store() {
 case "$1" in
     help|-h|--help)                         _offline-help;;
     list|-l|--list|--ls)                    _offline-list;;
+    remove|-r|--remove|--rm)                _offline-remove;;
     execute|-x|--execute)                   _offline-execute;;
     *)                                      _offline-store "$*";;
 esac
