@@ -18,11 +18,16 @@
 # COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-# bind UP and DOWN arrow keys
 
-############################
-# history-substring-search #
-############################
+#
+# zsh-syntax-highlighting
+#
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(root main brackets pattern cursor)
+
+#
+# history-substring-search
+#
+# bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
@@ -39,10 +44,9 @@ bindkey -M vicmd 'j' history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-############
-# zsh-dwim #
-############
-
+#
+# zsh-dwim
+#
 ## rm -> rm -f
 _dwim_add_transform '^rm' \
   '_dwim_sed "s/^rm /rm -f /"'
@@ -79,10 +83,9 @@ _dwim_add_transform '^mv ' \
 _dwim_add_transform '^gd ' \
   '_dwim_sed "s/^gd /ga /"'
 
-########
-# tmux #
-########
-
+#
+# tmux
+#
 # Startup configuration for tmux
 function startt() {
     case $1 in
