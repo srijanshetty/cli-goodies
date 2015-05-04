@@ -1,6 +1,7 @@
 imports:
     beets: completion
     hub: completion
+    ag: completion
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -11,4 +12,5 @@ curl module hub:
     build: mv hub.zsh_completion _hub
     sha1: 607c202f89635e636708d7dc68f5079bf0597254
 
-
+curl module ag:
+    url: https://raw.githubusercontent.com/thoughtbot/dotfiles/master/zsh/completion/_ag
