@@ -25,11 +25,11 @@
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(root main brackets pattern cursor)
 
 # ZSH_HIGHLIGHT_STYLES[default]=none
-# ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red,bold
+ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red
 # ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=green
-# ZSH_HIGHLIGHT_STYLES[alias]=none
-ZSH_HIGHLIGHT_STYLES[builtin]=none
-ZSH_HIGHLIGHT_STYLES[function]=fg=cyan
+ZSH_HIGHLIGHT_STYLES[alias]=fg=yellow,bold
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=cyan,bold
+ZSH_HIGHLIGHT_STYLES[function]=fg=blue,bold
 # ZSH_HIGHLIGHT_STYLES[command]=none
 # ZSH_HIGHLIGHT_STYLES[precommand]=none
 # ZSH_HIGHLIGHT_STYLES[commandseparator]=none
