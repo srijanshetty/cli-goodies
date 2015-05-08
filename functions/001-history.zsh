@@ -51,6 +51,10 @@ preexec() {
         echo "$1" >> "${HOME}/.install-log"
     fi
 
+    if [ $1 =~ "^go (get|install)" ]; then
+        echo "$1" >> "${HOME}/.install-log"
+    fi
+
     if [ $1 =~ "add-apt-repository" ]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
