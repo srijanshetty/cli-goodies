@@ -3,4 +3,5 @@ external
 completion/_beet
 completion/_hub
 completion/_ag
+completion/_rvm
 
