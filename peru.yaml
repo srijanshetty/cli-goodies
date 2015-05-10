@@ -15,6 +15,8 @@ curl module hub:
 
 curl module ag:
     url: https://raw.githubusercontent.com/thoughtbot/dotfiles/master/zsh/completion/_ag
+    sha1: 44e9d4444ad6538143ee4ac7db6c4f3b7b9c076e
 
 curl module rvm:
     url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
+    sha1: 73f67dedb72fd97fcb1a4b303762cdcef68fc59f
