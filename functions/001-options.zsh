@@ -1,6 +1,7 @@
 #
 # Directory options
 #
+setopt AUTO_CD              # Writing the name of directory cd's into it
 setopt MULTIOS              # Write to multiple descriptors.
 setopt EXTENDED_GLOB        # Use extended globbing syntax.
 unsetopt CLOBBER            # Do not overwrite existing files with > and >>.
