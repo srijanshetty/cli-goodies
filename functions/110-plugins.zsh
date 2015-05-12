@@ -20,53 +20,6 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #
-# zsh-syntax-highlighting
-#
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(root main brackets pattern cursor)
-
-# ZSH_HIGHLIGHT_STYLES[default]=none
-ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red
-# ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=green
-ZSH_HIGHLIGHT_STYLES[alias]=fg=yellow
-ZSH_HIGHLIGHT_STYLES[builtin]=fg=cyan,bold
-ZSH_HIGHLIGHT_STYLES[function]=fg=blue,bold
-# ZSH_HIGHLIGHT_STYLES[command]=none
-# ZSH_HIGHLIGHT_STYLES[precommand]=none
-# ZSH_HIGHLIGHT_STYLES[commandseparator]=none
-# ZSH_HIGHLIGHT_STYLES[hashed-command]=none
-# ZSH_HIGHLIGHT_STYLES[path]=none
-# ZSH_HIGHLIGHT_STYLES[globbing]=none
-# ZSH_HIGHLIGHT_STYLES[history-expansion]=fg=blue
-# ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=none
-# ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=none
-# ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=none
-# ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=yellow
-# ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=cyan
-# ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=cyan
-# ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=cyan
-# ZSH_HIGHLIGHT_STYLES[assign]=none
-
-#
-# history-substring-search
-#
-# bind UP and DOWN arrow keys
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# bind P and N for EMACS mode
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
-
-# bind k and j for VI mode
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
-
-# bind UP and DOWN arrow keys
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-#
 # zsh-dwim
 #
 ## rm -> rm -f

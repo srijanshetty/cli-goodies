@@ -71,3 +71,13 @@ alias get='wget --continue --progress=bar --timestamping'
 # Resource Usage
 alias df='df -kh'
 alias du='du -kh'
+
+# Open websites directly
+alias -s org=google-chrome
+alias -s com=google-chrome
+alias -s in=google-chrome
+alias -s io=google-chrome
+alias -s mp4=vlc
+alias -s avi=vlc
+alias -s mkv=vlc
+alias -s mp3=vlc
