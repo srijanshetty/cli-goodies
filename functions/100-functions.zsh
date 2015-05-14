@@ -76,7 +76,7 @@ function errorcode() {
 
 # send a directory
 function sdp() {
-    tar cvzf - "$1" | ssh "$2" 'tar xzf -'
+    tar cvzf - "$1" --exclude-vcs | ssh "$2" 'tar xzf -'
 }
 
 #pastebin
