@@ -1,8 +1,8 @@
 imports:
-    beets: completion
-    hub: completion
-    ag: completion
-    rvm: completion
+    beets: functions
+    hub: functions
+    ag: functions
+    rvm: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet

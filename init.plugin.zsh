@@ -20,7 +20,7 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Source files in functions directory
-for file in ${0:h}/functions/**/*(.); do
+for file in ${0:h}/settings/**/*(.); do
     source "$file"
 done
 
@@ -36,7 +36,7 @@ PLUGIN_D="$(dirname $0)"
 export PATH="${PATH}:${PLUGIN_D}/scripts"
 
 # Add completions to $fpath.
-fpath=("${0:h}/completion" $fpath)
+fpath=("${0:h}/functions" $fpath)
 
 # Load and initialize the completion system ignoring insecure directories.
 autoload -Uz compinit && compinit -i

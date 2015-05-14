@@ -1,5 +1,5 @@
 .peru
 external
-completion
-!completion/_offline
-!completion/_repos
+functions
+!functions/_offline
+!functions/_repos
