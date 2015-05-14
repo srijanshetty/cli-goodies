@@ -1,5 +1,10 @@
 #
-# Functions
+# Directory options
+#
+setopt AUTO_CD              # Writing the name of directory cd's into it
+
+#
+# Hooks
 #
 
 # Create the log if it does not exist
