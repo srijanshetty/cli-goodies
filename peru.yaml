@@ -3,6 +3,9 @@ imports:
     hub: functions
     ag: functions
     rvm: functions
+    pandoc: functions
+    pip: functions
+    git-annex: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -10,7 +13,7 @@ curl module beets:
 
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
-    build: mv hub.zsh_completion _hub
+    move: { "hub.zsh_completion" : "_hub"}
     sha1: 607c202f89635e636708d7dc68f5079bf0597254
 
 curl module ag:
@@ -20,3 +23,15 @@ curl module ag:
 curl module rvm:
     url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
     sha1: 73f67dedb72fd97fcb1a4b303762cdcef68fc59f
+
+curl module pandoc:
+    url: https://raw.githubusercontent.com/srijanshetty/zsh-pandoc-completion/master/_pandoc
+    sha1: a83ed1fd289fd98b68d1920750bddd4183ed9a4b
+
+curl module pip:
+    url: https://raw.githubusercontent.com/srijanshetty/zsh-pip-completion/master/_pip
+    sha1: 7ea7051b25e22f1e105570d357de76c758539b68
+
+curl module git-annex:
+    url: https://raw.githubusercontent.com/Schnouki/git-annex-zsh-completion/master/_git-annex
+    sha1: a22d8e11b6167b4f20f609348a247a39b001aeed
