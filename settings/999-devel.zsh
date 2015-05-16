@@ -213,3 +213,6 @@ fi
 #
 # Check for the hub alias and then eval it
 hash hub &>/dev/null && eval "$(hub alias -s)"
+
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
