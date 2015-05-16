@@ -167,6 +167,11 @@ alias cd=_git_cd
 #
 # Go
 #
+
+if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then
+    source "$HOME/.gvm/scripts/gvm"
+fi
+
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
@@ -203,3 +208,8 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
   source "$HOME/.rvm/scripts/rvm"
 fi
 
+#
+# Hub
+#
+# Check for the hub alias and then eval it
+hash hub &>/dev/null && eval "$(hub alias -s)"

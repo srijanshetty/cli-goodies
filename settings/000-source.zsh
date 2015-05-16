@@ -14,8 +14,5 @@
 # mr
 [[ -s ~/.mrenv ]] && source ~/.mrenv
 
-# Check for the hub alias and then eval it
-hash hub && eval "$(hub alias -s)"
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
