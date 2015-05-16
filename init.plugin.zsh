@@ -3,7 +3,7 @@
 #
 # Source init.zsh
 #
-source init.zsh
+source "${0:h}/init.zsh"
 
 # Load functions which are not completions
 for pfunction in ${0:h}/functions/^[_.]*; do
