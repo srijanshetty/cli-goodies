@@ -1,11 +1,11 @@
 imports:
     beets: functions
     hub: functions
-    ag: functions
     rvm: functions
     pandoc: functions
     pip: functions
     git-annex: functions
+    gulp: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -15,10 +15,6 @@ curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
     move: { "hub.zsh_completion" : "_hub"}
     sha1: 607c202f89635e636708d7dc68f5079bf0597254
-
-curl module ag:
-    url: https://raw.githubusercontent.com/thoughtbot/dotfiles/master/zsh/completion/_ag
-    sha1: 44e9d4444ad6538143ee4ac7db6c4f3b7b9c076e
 
 curl module rvm:
     url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
@@ -35,3 +31,7 @@ curl module pip:
 curl module git-annex:
     url: https://raw.githubusercontent.com/Schnouki/git-annex-zsh-completion/master/_git-annex
     sha1: a22d8e11b6167b4f20f609348a247a39b001aeed
+
+curl module gulp:
+    url: https://raw.githubusercontent.com/srijanshetty/gulp-autocompletion-zsh/master/_gulp
+    sha1: 7759d8cb9b888841aa0ef0570fddb9d6a85e52a0
