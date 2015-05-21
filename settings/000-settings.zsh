@@ -1,28 +1,4 @@
 #
-# Source
-#
-
-# source autojump configuration
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
-
-# source proxy configuration
-# . ~/.proxyrc
-
-# source private functions
-[[ -s ~/.private.sh ]] && source ~/.private.sh
-
-# mr
-[[ -s ~/.mrenv ]] && source ~/.mrenv
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#
-# Directory options
-#
-setopt AUTO_CD              # Writing the name of directory cd's into it
-
-#
 # Hooks
 #
 
@@ -54,4 +30,20 @@ preexec() {
     if [[ $1 =~ "apt-get install" ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
+}
+
+#
+# Awesomeness
+#
+# Some awesomeness
+alias cowcommit="wget -qO- http://whatthecommit.com/index.txt | cowsay"
+alias cowsay='cowsay -f $(ls /usr/share/cowsay/cows | sort -R | head -1)'
+
+# Stocks
+function get-stock-change() {
+    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
+}
+
+function get-stock-price() {
+    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1"
 }
