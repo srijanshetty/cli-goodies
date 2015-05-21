@@ -1,5 +1,6 @@
 .peru
 external
+functions/_*
 !functions/_offline
 !functions/_repos
-functions/_*
+!functions/_sheet
