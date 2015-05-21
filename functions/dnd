@@ -1,0 +1,15 @@
+#
+# Do not disturb
+#
+# Authors:
+#   Srijan R. Shetty <srijan.shetty+code@gmail.com>
+#
+
+# set -e
+
+if [[ $1 == 'off' ]]; then
+    gsettings set org.pantheon.desktop.gala.notifications do-not-disturb false
+else
+    pkill chrome
+    gsettings set org.pantheon.desktop.gala.notifications do-not-disturb true
+fi
