@@ -195,6 +195,15 @@ fi
 alias npm-list="npm list -g --depth 0"
 
 #
+# Hub
+#
+# Check for the hub alias and then eval it
+hash hub &>/dev/null && eval "$(hub alias -s)"
+
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+#
 # Ruby
 #
 # RVM should be the last thing that is loaded
@@ -207,12 +216,3 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
   # Source RVM.
   source "$HOME/.rvm/scripts/rvm"
 fi
-
-#
-# Hub
-#
-# Check for the hub alias and then eval it
-hash hub &>/dev/null && eval "$(hub alias -s)"
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
