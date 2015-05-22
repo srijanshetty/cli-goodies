@@ -142,6 +142,7 @@ alias gcm="git commit -m"
 alias gca="git commit --amend"
 alias gr="git remote"
 alias grv="git remote -v"
+alias gig="git ignore"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
