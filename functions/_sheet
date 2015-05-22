@@ -1,2 +1,2 @@
 #compdef sheet
-_arguments "1: :($(sheet list | tr "\n" " "))"
+_arguments "2: :($(sheet list | tr "\n" " "))"
