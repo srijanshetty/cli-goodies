@@ -173,14 +173,6 @@ if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then
     source "$HOME/.gvm/scripts/gvm"
 fi
 
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin
-
-#
-# Cabal
-#
-export PATH=$PATH:~/.cabal/bin
-
 #
 # Plugins and Utilities
 #
@@ -189,9 +181,6 @@ hash hub &>/dev/null && eval "$(hub alias -s)"
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# source autojump configuration
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
 # source proxy configuration
 # . ~/.proxyrc
