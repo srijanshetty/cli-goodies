@@ -7,6 +7,7 @@ imports:
     git-annex: functions
     gulp: functions
     geeknote: functions
+    sheet: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -41,3 +42,6 @@ curl module geeknote:
     url: https://raw.githubusercontent.com/s7anley/zsh-geeknote/master/_geeknote
     sha1: 100342ec2c089be30b1faad1be8cc8c18968458a
 
+curl module sheet:
+    url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
+    move: { "sheet.zsh" : "_sheet"}
