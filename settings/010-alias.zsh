@@ -10,13 +10,3 @@ alias vi="gvim"
 
 # vcsh specific aliases
 alias vs="vcsh status"
-
-# Open websites directly
-alias -s org=google-chrome
-alias -s com=google-chrome
-alias -s in=google-chrome
-alias -s io=google-chrome
-alias -s mp4=vlc
-alias -s avi=vlc
-alias -s mkv=vlc
-alias -s mp3=vlc
