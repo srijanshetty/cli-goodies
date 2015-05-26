@@ -51,3 +51,4 @@ curl module geeknote:
 curl module sheet:
     url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
     move: { "sheet.zsh" : "_sheet"}
+    sha1: 86fe43a17dc7cc1f049d8c9e7ec3deafe68652aa
