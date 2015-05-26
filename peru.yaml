@@ -8,6 +8,7 @@ imports:
     gulp: functions
     geeknote: functions
     sheet: functions
+    grunt: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -37,6 +38,11 @@ curl module git-annex:
 curl module gulp:
     url: https://raw.githubusercontent.com/srijanshetty/gulp-autocompletion-zsh/master/_gulp
     sha1: 7759d8cb9b888841aa0ef0570fddb9d6a85e52a0
+
+curl module grunt:
+    url: https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/zsh
+    move: { "zsh" : "_grunt"}
+    sha1: 2487bdb7d497e61c66b26e9e635a5395aaa5c44b
 
 curl module geeknote:
     url: https://raw.githubusercontent.com/s7anley/zsh-geeknote/master/_geeknote
