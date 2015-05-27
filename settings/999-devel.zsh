@@ -38,14 +38,6 @@ _git_cd () {
 alias cd=_git_cd
 
 #
-# Go
-#
-
-if [[ -s "$HOME/.gvm/scripts/gvm" ]]; then
-    source "$HOME/.gvm/scripts/gvm"
-fi
-
-#
 # Plugins and Utilities
 #
 # Check for the hub alias and then eval it
@@ -65,6 +57,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Go
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # List all global npm packages
 alias npm-list="npm list -g --depth 0"
