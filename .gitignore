@@ -3,3 +3,4 @@ external
 functions/_*
 !functions/_offline
 !functions/_repos
+!functions/_sdp
