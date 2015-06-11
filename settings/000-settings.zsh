@@ -33,24 +33,12 @@ preexec() {
 }
 
 #
-# Awesomeness
+# Alias
 #
 # Some awesomeness
 alias cowcommit="wget -qO- http://whatthecommit.com/index.txt | cowsay"
 alias cowsay='cowsay -f $(ls /usr/share/cowsay/cows | sort -R | head -1)'
 
-# Stocks
-function get-stock-change() {
-    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
-}
-
-function get-stock-price() {
-    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1"
-}
-
-#
-# Alias
-#
 # colored cat
 alias c='pygmentize -O style=monokai -f console256 -g'
 
@@ -63,3 +51,19 @@ alias vi="vim"
 
 # vcsh specific aliases
 alias vs="vcsh status"
+
+# List all global npm packages
+alias npm-list="npm list -g --depth 0"
+
+#
+# To test
+#
+
+# Stocks
+function get-stock-change() {
+    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
+}
+
+function get-stock-price() {
+    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1"
+}

@@ -60,6 +60,3 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Go
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
-# List all global npm packages
-alias npm-list="npm list -g --depth 0"
