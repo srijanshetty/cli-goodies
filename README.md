@@ -44,15 +44,17 @@ cli-goodies
               /____/
 ```
 
-- [dnd](https://github.com/srijanshetty/dnd): DND mode for Elementary OS
-- [folder2md](https://github.com/srijanshetty/folder2md): Convert a directory tree to markdown
-- [gip](functions/gip): Get the global IP using [ifconfig.me](http://ifconfig.me)
-- [lip](functions/lip): Get the local IP
+- [cron-wallpaper](https://github.com/srijanshetty/cron-wallpaper): Change wallpapers using cron.
+- [dnd](https://github.com/srijanshetty/dnd): DND mode for Elementary OS.
+- [folder2md](https://github.com/srijanshetty/folder2md): Convert a directory tree to markdown.
+- [gip](functions/gip): Get the global IP using [ifconfig.me](http://ifconfig.me).
+- [lip](functions/lip): Get the local IP.
 - [offline](https://github.com/srijanshetty/offline): Stores commands when offline and execute later in batch.
 - [pastebin](functions/pastebin): Create a pastie using [sprunge.us](http://sprunge.us)
 - [proxy](functions/proxy): Enable/disable proxy settings.
 - [repos](functions/repos): Helper for [myrepos](myrepos.branchable.com).
-- [sdp](https://github.com/srijanshetty/sdp): scp for directories
-- [server](functions/server): Create a HTTP server
+- [sdp](https://github.com/srijanshetty/sdp): scp for directories.
+- [server](functions/server): Create a HTTP server.
 - [showtoiletfonts](functions/showtoiletfonts): Show available toilet fonts.
+- [stats-cli](https://github.com/srijanshetty/stats-cli): Compute avg, sd, min, max from a list.
 - [transfer](http://transfer.sh): Use [transfer.sh](https://transfer.sh) to transfer files from the CLI.
