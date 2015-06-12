@@ -11,6 +11,10 @@ preexec() {
         echo "$1" >> "${HOME}/.install-log"
     fi
 
+    if [[ $1 =~ "^brew (install|tap)" ]]; then
+        echo "$1" >> "${HOME}/.install-log"
+    fi
+
     if [[ $1 =~ "^gem install" ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
