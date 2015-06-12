@@ -1,4 +1,0 @@
-#compdef sdp
-
-_arguments "1: : _files" \
-           "2: :($(grep 'Host ' ~/.ssh/config | awk '{print $2}' | tr '\n' ' '))"
