@@ -1,5 +1,6 @@
 imports:
     beets: functions
+    dnd: functions
     hub: functions
     geeknote: functions
     git-annex: functions
@@ -15,6 +16,10 @@ imports:
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
     sha1: c0bc74c40e7287fdc93831a3d9a42a4a57c9d0a1
+
+git module dnd:
+    url: https://github.com/srijanshetty/dnd
+    pick: ['dnd', '_dnd']
 
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
