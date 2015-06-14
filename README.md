@@ -47,7 +47,6 @@ cli-goodies
 - [cron-wallpaper](https://github.com/srijanshetty/cron-wallpaper): Change wallpapers using cron.
 - [dnd](https://github.com/srijanshetty/dnd): DND mode for Elementary OS.
 - [folder2md](https://github.com/srijanshetty/folder2md): Convert a directory tree to markdown.
-- [gip](functions/gip): Get the global IP using [ifconfig.me](http://ifconfig.me).
 - [lip](functions/lip): Get the local IP.
 - [offline](https://github.com/srijanshetty/offline): Stores commands when offline and execute later in batch.
 - [pastebin](functions/pastebin): Create a pastie using [sprunge.us](http://sprunge.us)

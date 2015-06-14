@@ -1,8 +1,0 @@
-#
-# Get the global IP
-#
-# Authors:
-#   Srijan R. Shetty <srijan.shetty+code@gmail.com>
-#
-
-curl ifconfig.me
