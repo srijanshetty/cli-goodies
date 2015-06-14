@@ -26,42 +26,42 @@ curl module hub:
     move: { "hub.zsh_completion" : "_hub"}
     sha1: 607c202f89635e636708d7dc68f5079bf0597254
 
-curl module geeknote:
-    url: https://raw.githubusercontent.com/s7anley/zsh-geeknote/master/_geeknote
-    sha1: 100342ec2c089be30b1faad1be8cc8c18968458a
+git module geeknote:
+    url: https://github.com/s7anley/zsh-geeknote
+    pick: _geeknote
 
-curl module git-annex:
-    url: https://raw.githubusercontent.com/Schnouki/git-annex-zsh-completion/master/_git-annex
-    sha1: a22d8e11b6167b4f20f609348a247a39b001aeed
+git module git-annex:
+    url: https://github.com/Schnouki/git-annex-zsh-completion
+    pick: _git-annex
 
 curl module grunt:
     url: https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/zsh
     move: { "zsh" : "_grunt"}
     sha1: 2487bdb7d497e61c66b26e9e635a5395aaa5c44b
 
-curl module gulp:
-    url: https://raw.githubusercontent.com/srijanshetty/gulp-autocompletion-zsh/master/_gulp
-    sha1: 7759d8cb9b888841aa0ef0570fddb9d6a85e52a0
+git module gulp:
+    url: https://github.com/srijanshetty/gulp-autocompletion-zsh
+    pick: _gulp
 
-curl module offline:
-    url: https://raw.githubusercontent.com/srijanshetty/offline/master/_offline
-    sha1: 0b4c8b1ab7e9450e03edc2f1cb66bc30f699f542
+git module offline:
+    url: https://github.com/srijanshetty/offline
+    pick: _offline
 
-curl module pandoc:
-    url: https://raw.githubusercontent.com/srijanshetty/zsh-pandoc-completion/master/_pandoc
-    sha1: a83ed1fd289fd98b68d1920750bddd4183ed9a4b
+git module pandoc:
+    url: https://github.com/srijanshetty/zsh-pandoc-completion
+    pick: _pandoc
 
-curl module pip:
-    url: https://raw.githubusercontent.com/srijanshetty/zsh-pip-completion/master/_pip
-    sha1: 7ea7051b25e22f1e105570d357de76c758539b68
+git module pip:
+    url: https://github.com/srijanshetty/zsh-pip-completion
+    pick: _pip
 
 curl module rvm:
     url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
     sha1: 73f67dedb72fd97fcb1a4b303762cdcef68fc59f
 
-curl module sdp:
-    url: https://raw.githubusercontent.com/srijanshetty/sdp/master/_sdp
-    sha1: f67de181500df8dfdbb767c641584a0143a6b10e
+git module sdp:
+    url: https://github.com/srijanshetty/sdp
+    pick: _sdp
 
 curl module sheet:
     url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
