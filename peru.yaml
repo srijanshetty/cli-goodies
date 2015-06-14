@@ -61,7 +61,7 @@ curl module rvm:
 
 git module sdp:
     url: https://github.com/srijanshetty/sdp
-    pick: _sdp
+    pick: ['_sdp', 'sdp']
 
 curl module sheet:
     url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
