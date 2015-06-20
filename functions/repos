@@ -89,13 +89,13 @@ function _repos-reg() {
 }
 
 case "$1" in
-    -ls | --list)          _repos-list;;
-    -e | --enable)         _repos-enable "$2";;
-    -d | --disable)        _repos-disable "$2";;
-    -r | --reg)            _repos-reg;;
-    -a | --available)      _repos-available;;
-    -c | --check)          _repos-check;;
-    -o | --only)           _repos-only "$2";;
+    ls | list)          _repos-list;;
+    e | enable)         _repos-enable "$2";;
+    d | disable)        _repos-disable "$2";;
+    r | reg)            _repos-reg;;
+    a | available)      _repos-available;;
+    c | check)          _repos-check;;
+    o | only)           _repos-only "$2";;
     *)                  _repos-help;;
 esac
 
