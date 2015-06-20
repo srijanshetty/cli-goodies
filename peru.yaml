@@ -63,9 +63,9 @@ git module pip:
     pick: _pip
     rev: 867c7c10e84ded7c557cc125cdee846df67a8cb2
 
-curl module rvm:
-    url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
-    sha1: 73f67dedb72fd97fcb1a4b303762cdcef68fc59f
+git module rvm:
+    url: https://github.com/rvm/rvm
+    export: scripts/extras/completion.zsh/
 
 git module sdp:
     url: https://github.com/srijanshetty/sdp
