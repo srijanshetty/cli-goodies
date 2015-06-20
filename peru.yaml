@@ -21,6 +21,7 @@ curl module beets:
 git module dnd:
     url: https://github.com/srijanshetty/dnd
     pick: ['dnd', '_dnd']
+    rev: 5c1684823a416ab820254e3112588bad786a2611
 
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
@@ -30,10 +31,12 @@ curl module hub:
 git module geeknote:
     url: https://github.com/s7anley/zsh-geeknote
     pick: _geeknote
+    rev: 914e6245f7444ea781533464717fb06d1639f6ac
 
 git module git-annex:
     url: https://github.com/Schnouki/git-annex-zsh-completion
     pick: _git-annex
+    rev: c39f33d5d740b46285629010ab6bf95d2f28ac90
 
 curl module grunt:
     url: https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/zsh
@@ -43,18 +46,22 @@ curl module grunt:
 git module gulp:
     url: https://github.com/srijanshetty/gulp-autocompletion-zsh
     pick: _gulp
+    rev: 8f161021ec315b03ec7ce5ac777c734672656238
 
 git module offline:
     url: https://github.com/srijanshetty/offline
     pick: _offline
+    rev: c5bad33510a348f89351334512d4e38a5deed20a
 
 git module pandoc:
     url: https://github.com/srijanshetty/zsh-pandoc-completion
     pick: _pandoc
+    rev: 84de9dfa20c1794d0f48fe7b9f73044d7fb82cf5
 
 git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
     pick: _pip
+    rev: 867c7c10e84ded7c557cc125cdee846df67a8cb2
 
 curl module rvm:
     url: https://raw.githubusercontent.com/rvm/rvm/master/scripts/extras/completion.zsh/_rvm
@@ -63,6 +70,7 @@ curl module rvm:
 git module sdp:
     url: https://github.com/srijanshetty/sdp
     pick: ['_sdp', 'sdp']
+    rev: 070943e88799e781c5676337159dde9fe69c3a92
 
 curl module sheet:
     url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
@@ -72,3 +80,4 @@ curl module sheet:
 git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
+    rev: fbc14aab51072b04056654ec0fd6bf379fb61e07
