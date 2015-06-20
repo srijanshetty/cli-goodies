@@ -1,11 +1,56 @@
 Introduction
 ------------
 
-These are a bunch of antigen/oh-my-zsh/prezto compatible shell scripts which make my life
-easier.
+These are a bunch of antigen/oh-my-zsh/prezto compatible shell scripts which make me productive on the commandline.
 
-Completions
------------
+Installation
+------------
+
+I use [Prezto](https://github.com/sorin-inoescu/prezto) to manage `zsh`; ergo this repository should work seamlessly with it, with close to no impact to shell load time.
+
+### Installing under [Prezto](https://github.com/sorin-ionescu/prezto)
+
+    cd .zprezto
+    git submodule add https://github.com/srijanshetty/cli-goodies.git modules/cli-goodies
+
+Add `cli-goodies` to your `.zpreztorc` file:
+
+    # Set the Prezto modules to load (browse modules).
+    # The order matters.
+    zstyle ':prezto:load' pmodule \
+      'environment' \
+      'terminal' \
+      'editor' \
+      'history' \
+      'directory' \
+      'spectrum' \
+      'utility' \
+      'completion' \
+      'prompt' \
+      'cli-goodies'
+
+### Installing under oh-my-zsh
+
+I haven't tried using `cli-goodies` with `oh-my-zsh` and I think the following should work in theory.
+
+    wget https://raw.github.com/srijanshetty/cli-goodies/master/init.zsh -O $HOME/.oh-my-zsh/custom/cli-goodies.zsh
+
+### Installing using [Antigen](https://github.com/zsh-users/antigen)
+
+If you use [Antigen](https://github.com/zsh-users/antigen), adding the following line to `.zshrc` should load `cli-goodies`.
+
+    antigen-bundle srijanshetty/zsh-dwim
+
+### Using `cli-goodies` anywhere else
+
+Anyone running `zsh` should only need to add the following line to their `.zshrc`:
+
+    source init.zsh
+
+Features
+---------
+
+## Completions
 
 ```
                               __     __  _
@@ -32,8 +77,7 @@ Completions for a bunch of commands collected in one place
 - [_sdp](https://raw.githubusercontent.com/srijanshetty/sdp/master/_sdp)
 - [_repos](functions/_repos)
 
-cli-goodies
------------
+## Scripts/Functions
 
 ```
         ___                             ___
