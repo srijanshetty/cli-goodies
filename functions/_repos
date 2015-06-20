@@ -10,6 +10,7 @@ _arguments -s -S \
     '--enable[enable given configuration]'\
     '--list[list current configurations]'\
     '--only[only enable a configuration]'\
+    '--reg[register a git directory to mr]'\
     && return 0
 
     return 1
