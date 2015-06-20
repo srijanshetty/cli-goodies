@@ -1,6 +1,1 @@
 .peru
-external
-functions/_*
-!functions/_repos
-functions/dnd
-functions/sdp

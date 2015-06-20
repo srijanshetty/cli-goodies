@@ -1,0 +1,10 @@
+#compdef dnd
+
+typeset -A opt_args
+local context state line
+
+_arguments -s -S \
+    'off'\
+    && return 0
+
+    return 1

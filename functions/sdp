@@ -1,0 +1,13 @@
+#
+# Moves a directory using scp
+#
+# Authors:
+#   Srijan R. Shetty <srijan.shetty+code@gmail.com>
+#
+
+if [[ ! -z $1 && ! -z $2 ]]; then
+    tar cvzf - "$1" --exclude-vcs | ssh "$2" 'tar xvzf -'
+else
+    echo "Missing parameters"
+fi
+
