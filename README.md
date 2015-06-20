@@ -96,7 +96,6 @@ Completions for a bunch of commands collected in one place
 - [proxy](functions/proxy): Enable/disable proxy settings.
 - [repos](functions/repos): Helper for [myrepos](myrepos.branchable.com).
 - [sdp](https://github.com/srijanshetty/sdp): scp for directories.
-- [server](functions/server): Create a HTTP server.
 - [showtoiletfonts](functions/showtoiletfonts): Show available toilet fonts.
 - [stats-cli](https://github.com/srijanshetty/stats-cli): Compute avg, sd, min, max from a list.
 - [transfer](http://transfer.sh): Use [transfer.sh](https://transfer.sh) to transfer files from the CLI.
