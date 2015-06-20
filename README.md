@@ -91,7 +91,6 @@ Completions for a bunch of commands collected in one place
 - [cron-wallpaper](https://github.com/srijanshetty/cron-wallpaper): Change wallpapers using cron.
 - [dnd](https://github.com/srijanshetty/dnd): DND mode for Elementary OS.
 - [folder2md](https://github.com/srijanshetty/folder2md): Convert a directory tree to markdown.
-- [lip](functions/lip): Get the local IP.
 - [offline](https://github.com/srijanshetty/offline): Stores commands when offline and execute later in batch.
 - [pastebin](functions/pastebin): Create a pastie using [sprunge.us](http://sprunge.us)
 - [proxy](functions/proxy): Enable/disable proxy settings.
