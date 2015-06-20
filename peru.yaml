@@ -12,6 +12,7 @@ imports:
     rvm: functions
     sdp: functions
     sheet: functions
+    snips: functions
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
@@ -67,3 +68,7 @@ curl module sheet:
     url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
     move: { "sheet.zsh" : "_sheet"}
     sha1: 86fe43a17dc7cc1f049d8c9e7ec3deafe68652aa
+
+git module snips:
+    url: https://github.com/srijanshetty/snips
+    pick: ['_snips']
