@@ -1,5 +1,6 @@
 imports:
     beets: functions
+    boom: functions
     dnd: functions
     hub: functions
     geeknote: functions
@@ -17,6 +18,11 @@ imports:
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
     sha1: c0bc74c40e7287fdc93831a3d9a42a4a57c9d0a1
+
+curl module boom:
+    url: https://raw.githubusercontent.com/holman/boom/master/completion/boom.zsh
+    move: { "boom.zsh" : "_boom"}
+    sha1: 6471dc9987e635ae0dd864d0259a61ccb6330eac
 
 git module dnd:
     url: https://github.com/srijanshetty/dnd
@@ -66,6 +72,7 @@ git module pip:
 git module rvm:
     url: https://github.com/rvm/rvm
     export: scripts/extras/completion.zsh/
+    rev: f63aa7c8ec8b4230bf18da24caaf37d5160ce669
 
 git module sdp:
     url: https://github.com/srijanshetty/sdp
@@ -80,4 +87,4 @@ curl module sheet:
 git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
-    rev: fbc14aab51072b04056654ec0fd6bf379fb61e07
+    rev: 8bc02a264143ce39c580c58c21dc5e21f28abcd9
