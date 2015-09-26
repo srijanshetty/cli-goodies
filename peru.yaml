@@ -12,7 +12,6 @@ imports:
     pip: functions
     rvm: functions
     sdp: functions
-    sheet: functions
     snips: functions
 
 curl module beets:
@@ -78,11 +77,6 @@ git module sdp:
     url: https://github.com/srijanshetty/sdp
     pick: ['_sdp', 'sdp']
     rev: 070943e88799e781c5676337159dde9fe69c3a92
-
-curl module sheet:
-    url: https://raw.githubusercontent.com/oscardelben/sheet/master/contrib/completion/sheet.zsh
-    move: { "sheet.zsh" : "_sheet"}
-    sha1: 86fe43a17dc7cc1f049d8c9e7ec3deafe68652aa
 
 git module snips:
     url: https://github.com/srijanshetty/snips
