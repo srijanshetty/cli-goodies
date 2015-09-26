@@ -69,7 +69,7 @@ alias npm-list="npm list -g --depth 0"
 
 # Store an install log of all npm/pip/apt-get installs
 preexec() {
-    if [[ $1 =~ "^npm install " ]]; then
+  if [[ $1 =~ "^npm install " ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
 
