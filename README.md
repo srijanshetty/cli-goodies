@@ -47,6 +47,15 @@ Anyone running `zsh` should only need to add the following line to their `.zshrc
 
     source init.zsh
 
+Dependencies
+------------
+
+- You'll need to install `peru` to get the completions working. Peru is a simple file downloader with a declarative syntax. While `curl` could be used to accomplish the same, `peru` is simpler to read.
+-
+
+    pip install peru
+    peru sync
+
 Features
 ---------
 
