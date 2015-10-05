@@ -4,7 +4,7 @@
 #Git alias
 alias glg="git lg"
 alias gs="git status"
-alias ga="git add"
+alias ga="git add --all"
 alias gt="git tag"
 alias gc="git checkout"
 alias gb="git branch"
