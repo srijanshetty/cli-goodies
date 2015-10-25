@@ -2,6 +2,7 @@ imports:
     beets: functions
     boom: functions
     dnd: functions
+    dircolors: plugins/dircolors
     hub: functions
     geeknote: functions
     git-annex: functions
@@ -82,3 +83,6 @@ git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
     rev: 8bc02a264143ce39c580c58c21dc5e21f28abcd9
+
+git module dircolors:
+    url: https://github.com/srijanshetty/zsh-dircolors-solarized
