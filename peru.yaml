@@ -8,6 +8,7 @@ imports:
     git-annex: functions
     grunt: functions
     gulp: functions
+    npm: functions
     offline: functions
     pandoc: functions
     pip: functions
@@ -23,6 +24,9 @@ curl module boom:
     url: https://raw.githubusercontent.com/holman/boom/master/completion/boom.zsh
     move: { "boom.zsh" : "_boom"}
     sha1: 6471dc9987e635ae0dd864d0259a61ccb6330eac
+
+git module dircolors:
+    url: https://github.com/srijanshetty/zsh-dircolors-solarized
 
 git module dnd:
     url: https://github.com/srijanshetty/dnd
@@ -54,6 +58,9 @@ git module gulp:
     pick: _gulp
     rev: 8f161021ec315b03ec7ce5ac777c734672656238
 
+curl module npm:
+    url: https://raw.githubusercontent.com/srijanshetty/npm-run.plugin.zsh/master/functions/_npm
+
 git module offline:
     url: https://github.com/srijanshetty/offline
     pick: _offline
@@ -83,6 +90,3 @@ git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
     rev: 8bc02a264143ce39c580c58c21dc5e21f28abcd9
-
-git module dircolors:
-    url: https://github.com/srijanshetty/zsh-dircolors-solarized
