@@ -65,3 +65,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
+# Update
+function upme {
+    cd && mr up
+    sudo apt-get update && sudo apt-get upgrade
+}
