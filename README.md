@@ -108,3 +108,10 @@ Completions for a bunch of commands collected in one place
 - [showtoiletfonts](functions/showtoiletfonts): Show available toilet fonts.
 - [stats-cli](https://github.com/srijanshetty/stats-cli): Compute avg, sd, min, max from a list.
 - [transfer](http://transfer.sh): Use [transfer.sh](https://transfer.sh) to transfer files from the CLI.
+
+Notes
+-----
+
+- There are two loaders [init.plugin.zsh](./init.plugin.zsh) and [init.zsh](./init.zsh). This is to make
+  sure that the module works with all the plugin loaders out there. The former in addition to loading the
+  latter also loads up all the autoloadable functions.
