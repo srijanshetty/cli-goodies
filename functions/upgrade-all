@@ -1,0 +1,11 @@
+#
+# Upgrade everything
+#
+# Authors:
+#   transfer.sh
+#
+
+cd && mr up
+sudo apt-get update && sudo apt-get upgrade
+npm-upgrade
+pip install --upgrade beets

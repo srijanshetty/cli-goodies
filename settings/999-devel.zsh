@@ -66,17 +66,3 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
-# npm-upgrade
-function npm-upgrade {
-    for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f2)
-    do
-        npm -g install "$package"
-    done
-}
-
-# Update
-function update-all {
-    cd && mr up
-    sudo apt-get update && sudo apt-get upgrade
-    npm-upgrade
-}
