@@ -18,7 +18,7 @@ imports:
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
-    sha1: c0bc74c40e7287fdc93831a3d9a42a4a57c9d0a1
+    sha1: 177bdb3b8fe6f7ed9c824014defafd0d28fe4fc5
 
 curl module boom:
     url: https://raw.githubusercontent.com/holman/boom/master/completion/boom.zsh
@@ -27,6 +27,7 @@ curl module boom:
 
 git module dircolors:
     url: https://github.com/srijanshetty/zsh-dircolors-solarized
+    rev: 53bd35884acf84ed24d0e99d78f68e5e1a855735
 
 git module dnd:
     url: https://github.com/srijanshetty/dnd
@@ -36,7 +37,7 @@ git module dnd:
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
     move: { "hub.zsh_completion" : "_hub"}
-    sha1: 607c202f89635e636708d7dc68f5079bf0597254
+    sha1: 4b94edf97f1cdf94d96bad594858fcbdff7f9cb6
 
 git module geeknote:
     url: https://github.com/s7anley/zsh-geeknote
@@ -46,7 +47,7 @@ git module geeknote:
 git module git-annex:
     url: https://github.com/Schnouki/git-annex-zsh-completion
     pick: _git-annex
-    rev: c39f33d5d740b46285629010ab6bf95d2f28ac90
+    rev: e87e7db7f01505e82fc0af36e9427b04f906223c
 
 curl module grunt:
     url: https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/zsh
@@ -60,6 +61,7 @@ git module gulp:
 
 curl module npm:
     url: https://raw.githubusercontent.com/srijanshetty/npm-run.plugin.zsh/master/functions/_npm
+    sha1: e0ed5815a62a5e02d8ab3f5c991e9e0c88a62135
 
 git module offline:
     url: https://github.com/srijanshetty/offline
@@ -69,7 +71,7 @@ git module offline:
 git module pandoc:
     url: https://github.com/srijanshetty/zsh-pandoc-completion
     pick: _pandoc
-    rev: 84de9dfa20c1794d0f48fe7b9f73044d7fb82cf5
+    rev: 87ab70c071e579f5ad556cb44536e50a7486d7a7
 
 git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
@@ -79,7 +81,7 @@ git module pip:
 git module rvm:
     url: https://github.com/rvm/rvm
     export: scripts/extras/completion.zsh/
-    rev: f63aa7c8ec8b4230bf18da24caaf37d5160ce669
+    rev: dc9d5c8c11333dfa37d533a83853830ae5b781a5
 
 git module sdp:
     url: https://github.com/srijanshetty/sdp
@@ -89,4 +91,4 @@ git module sdp:
 git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
-    rev: 8bc02a264143ce39c580c58c21dc5e21f28abcd9
+    rev: 52305a53dde4781bf1fe94af935c7b1ec41fbaa2
