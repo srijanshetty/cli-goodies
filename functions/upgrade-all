@@ -5,7 +5,17 @@
 #   transfer.sh
 #
 
-cd && mr up
-sudo apt-get update && sudo apt-get upgrade
-npm-upgrade
+# Linux updates
+sudo apt-get update && sudo apt-get -y upgrade
+
+# dotfiles updates
+cd /home/srijan/.zprezto/modules/custom && pip install --upgrade peru
+
+# Music upgrades
 pip install --upgrade beets
+
+# upgrade npm
+npm-upgrade
+
+# upgrade mr
+cd && mr up
