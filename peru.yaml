@@ -3,9 +3,9 @@ imports:
     boom: functions
     dnd: functions
     dircolors: plugins/dircolors
+    enhancd: plugins/enhancd
     hub: functions
-    geeknote: functions
-    git-annex: functions
+    # git-annex: functions
     grunt: functions
     gulp: functions
     npm: functions
@@ -18,7 +18,7 @@ imports:
 
 curl module beets:
     url: https://raw.githubusercontent.com/sampsyo/beets/master/extra/_beet
-    sha1: 177bdb3b8fe6f7ed9c824014defafd0d28fe4fc5
+    sha1: c9572e3c66d3e0f4251aae486677841429ac6e31
 
 curl module boom:
     url: https://raw.githubusercontent.com/holman/boom/master/completion/boom.zsh
@@ -28,6 +28,10 @@ curl module boom:
 git module dircolors:
     url: https://github.com/srijanshetty/zsh-dircolors-solarized
     rev: 53bd35884acf84ed24d0e99d78f68e5e1a855735
+
+git module enhancd:
+    url: https://github.com/srijanshetty/enhancd
+    rev: 3cc92f4fd7d80a4721653219dba193b03ea8eafc
 
 git module dnd:
     url: https://github.com/srijanshetty/dnd
@@ -39,20 +43,15 @@ curl module hub:
     move: { "hub.zsh_completion" : "_hub"}
     sha1: 4b94edf97f1cdf94d96bad594858fcbdff7f9cb6
 
-git module geeknote:
-    url: https://github.com/s7anley/zsh-geeknote
-    pick: _geeknote
-    rev: 914e6245f7444ea781533464717fb06d1639f6ac
-
-git module git-annex:
-    url: https://github.com/Schnouki/git-annex-zsh-completion
-    pick: _git-annex
-    rev: e87e7db7f01505e82fc0af36e9427b04f906223c
+# git module git-annex:
+#     url: https://github.com/Schnouki/git-annex-zsh-completion
+#     pick: _git-annex
+#     rev: e87e7db7f01505e82fc0af36e9427b04f906223c
 
 curl module grunt:
     url: https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/zsh
     move: { "zsh" : "_grunt"}
-    sha1: 2487bdb7d497e61c66b26e9e635a5395aaa5c44b
+    sha1: fd23edef343df6911b4a6d1017b8beb1a9c3c05f
 
 git module gulp:
     url: https://github.com/srijanshetty/gulp-autocompletion-zsh
@@ -81,7 +80,7 @@ git module pip:
 git module rvm:
     url: https://github.com/rvm/rvm
     export: scripts/extras/completion.zsh/
-    rev: dc9d5c8c11333dfa37d533a83853830ae5b781a5
+    rev: 303bc4ab2234e65045dab44a0f8ec696e81ca6f2
 
 git module sdp:
     url: https://github.com/srijanshetty/sdp
@@ -91,4 +90,4 @@ git module sdp:
 git module snips:
     url: https://github.com/srijanshetty/snips
     pick: ['_snips']
-    rev: 52305a53dde4781bf1fe94af935c7b1ec41fbaa2
+    rev: f1deef99413a811ab1210aaae656bd22e2c1bc64
