@@ -8,14 +8,22 @@
 # Linux updates
 sudo apt-get update && sudo apt-get -y upgrade
 
+# upgrade mr
+cd && mr up
+
 # dotfiles updates
 cd /home/srijan/.zprezto/modules/custom && pip install --upgrade peru
-
-# Music upgrades
-pip install --upgrade beets
 
 # upgrade npm
 npm-upgrade
 
-# upgrade mr
-cd && mr up
+# Music upgrades
+pip install --upgrade beets
+beet lastimport
+
+# tldr
+tldr upate
+
+# brew
+brew update
+

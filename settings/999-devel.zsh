@@ -43,9 +43,6 @@ alias cd=_git_cd
 # Check for the hub alias and then eval it
 hash hub &>/dev/null && eval "$(hub alias -s)"
 
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # source proxy configuration
 # . ~/.proxyrc
 
@@ -63,6 +60,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # linuxbrew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/sbin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-
