@@ -51,8 +51,7 @@ function gifify() {
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # vim -> gvim
-alias vim="gvim"
-alias vi="\vim"
+alias vi="vim"
 
 # vcsh specific aliases
 alias vs="vcsh status"
