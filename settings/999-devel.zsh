@@ -64,9 +64,6 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # source private functions
 [[ -s ~/.private.sh ]] && source ~/.private.sh
 
