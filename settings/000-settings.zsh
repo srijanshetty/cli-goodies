@@ -95,4 +95,12 @@ preexec() {
     if [[ $1 =~ "apt-get install" ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
+
+    if [[ $1 =~ "apt install" ]]; then
+        echo "$1" >> "${HOME}/.install-log"
+    fi
+
+    if [[ $1 =~ "snap install" ]]; then
+        echo "$1" >> "${HOME}/.install-log"
+    fi
 }
