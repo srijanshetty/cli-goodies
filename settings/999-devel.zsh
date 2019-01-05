@@ -58,6 +58,9 @@ export PATH="$HOME/.linuxbrew/sbin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
+# This is for pyenv and YouCompleteMe compatibility
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
