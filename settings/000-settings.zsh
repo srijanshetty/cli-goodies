@@ -2,6 +2,9 @@
 # Experimental
 #
 
+# Bash like Meta + dot
+bindkey "^[." insert-last-word
+
 # Stocks
 function get-stock-change() {
     curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
