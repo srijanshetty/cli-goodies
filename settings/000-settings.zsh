@@ -22,13 +22,6 @@ function gist-clone() {
   git clone git@gist.github.com:/$gist_id.git $2
 }
 
-# Add the current folder's npm-bin to path
-function npm-bin-path() {
-  echo "adding `npm bin` to path"
-  export PATH=$(npm bin):$PATH
-  echo $PATH
-}
-
 # copy last command to clipboard
 function copy-last-command() {
   fc -ln -1 | awk "{\$1=\$1}1" ORS="" | pbcopy
@@ -44,11 +37,6 @@ alias -g fzfc="| fzf | pbcopy"
 # Some awesomeness
 alias cowcommit="wget -qO- http://whatthecommit.com/index.txt | cowsay"
 alias cowsay='cowsay -f $(ls /usr/share/cowsay/cows | sort -R | head -1)'
-
-# Make a gif using specified files
-function gifify() {
-  sudo docker run -it --rm -v $(pwd):/data maxogden/gifify $1 -o $2
-}
 
 # colored cat
 alias c='pygmentize -O style=monokai -f console256 -g'
