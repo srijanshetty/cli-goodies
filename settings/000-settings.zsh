@@ -62,6 +62,9 @@ alias sha='shasum -a 256 '
 # ips
 alias ipe='curl ipinfo.io/ip'
 
+# dircolors
+eval "$(dircolors ~/.dircolors/dircolors.ansi-light)"
+
 #
 # Hooks
 #
