@@ -20,7 +20,7 @@ git-fshow() {
 		--reverse
 		--tiebreak=index
 		--no-sort
-		--bind=ctrl-s:toggle-sort
+		--bind=J:preview-down,K:preview-up,ctrl-f:preview-page-down,ctrl-b:preview-page-up,q:abort
 		--preview 'f() { set -- $(echo -- "$@" | grep -o "[a-f0-9]\{7\}"); [ $# -eq 0 ] || git show --color=always $1; }; f {}'
 	)
 	$g | $fzf
