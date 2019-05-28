@@ -5,11 +5,11 @@ imports:
     pip: functions
     rvm: functions
     snips: functions
+    git-fshow: functions
 
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
     move: { "hub.zsh_completion" : "_hub"}
-    sha1: 4b94edf97f1cdf94d96bad594858fcbdff7f9cb6
 
 git module gulp:
     url: https://github.com/srijanshetty/gulp-autocompletion-zsh
@@ -19,6 +19,9 @@ git module gulp:
 curl module npm:
     url: https://raw.githubusercontent.com/srijanshetty/npm-run.plugin.zsh/master/functions/_npm
     sha1: e0ed5815a62a5e02d8ab3f5c991e9e0c88a62135
+
+curl module git-fshow:
+  url: https://gist.githubusercontent.com/akatrevorjay/9fc061e8371529c4007689a696d33c62/raw/fa416408287ae342e977a8a42e9f2eb2067340b3/git-fshow
 
 git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
