@@ -9,21 +9,13 @@
 sudo apt-get update && sudo apt-get -y upgrade
 
 # upgrade mr
-cd && mr up
+cd ~ && mr up
+
+# Upgrade github repos
+cd $GITHUB_ROOT && mr up
 
 # dotfiles updates
-cd /home/srijan/.zprezto/modules/custom && pip install --upgrade peru
-
-# upgrade npm
-npm-upgrade
-
-# Music upgrades
-pip install --upgrade beets
-beet lastimport
+cd $CUSTOM_ROOT && pip install --upgrade peru
 
 # tldr
 tldr upate
-
-# brew
-brew update
-
