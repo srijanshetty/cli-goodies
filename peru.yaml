@@ -5,7 +5,6 @@ imports:
     pip: functions
     rvm: functions
     snips: functions
-    git-fshow: functions
 
 curl module hub:
     url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
@@ -19,9 +18,6 @@ git module gulp:
 curl module npm:
     url: https://raw.githubusercontent.com/srijanshetty/npm-run.plugin.zsh/master/functions/_npm
     sha1: e0ed5815a62a5e02d8ab3f5c991e9e0c88a62135
-
-curl module git-fshow:
-  url: https://gist.githubusercontent.com/srijanshetty/3017fbab6569f3e76e19c3c868eb0963/raw/2e91ed8adcbc664c5c840f12072d2de165738eda/git-fshow
 
 git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
