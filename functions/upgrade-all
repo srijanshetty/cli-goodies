@@ -5,6 +5,8 @@
 #   transfer.sh
 #
 
+ORIG=$PWD
+
 # Linux updates
 sudo apt-get update && sudo apt-get -y upgrade
 
@@ -18,4 +20,7 @@ cd $GITHUB_ROOT && mr up
 cd $CUSTOM_ROOT && pip install --upgrade peru
 
 # tldr
-tldr upate
+tldr -u
+
+# Go back to original folder
+cd $ORIG
