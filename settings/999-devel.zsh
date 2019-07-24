@@ -51,6 +51,7 @@ hash hub &>/dev/null && eval "$(hub alias -s)"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
 
 # linuxbrew
 export PATH="$HOME/.linuxbrew/bin:$PATH"
