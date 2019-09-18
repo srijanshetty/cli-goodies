@@ -74,39 +74,11 @@ eval "$(dircolors ~/.dircolors/dircolors.ansi-light)"
 
 # Store an install log of all npm/pip/apt-get installs
 preexec() {
-  if [[ $1 =~ "^npm install " ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "^brew (install|tap)" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "^gem install" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "^pip install" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "^go (get|install)" ]]; then
+    if [[ $1 =~ "(npm|gem|pip|brew|go|snap|apt|apt-get) (i|install|tap|get) " ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
 
     if [[ $1 =~ "add-apt-repository" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "apt-get install" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "apt install" ]]; then
-        echo "$1" >> "${HOME}/.install-log"
-    fi
-
-    if [[ $1 =~ "snap install" ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
 }
