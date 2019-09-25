@@ -19,8 +19,5 @@ cd $GITHUB_ROOT && mr up
 # dotfiles updates
 cd $CUSTOM_ROOT && pip install --upgrade peru
 
-# tldr
-tldr -u
-
 # Go back to original folder
 cd $ORIG
