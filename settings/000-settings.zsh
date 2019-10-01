@@ -5,15 +5,6 @@
 # Bash like Meta + dot
 bindkey "^[." insert-last-word
 
-# Stocks
-function get-stock-change() {
-    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1c1"
-}
-
-function get-stock-price() {
-    curl -s "http://download.finance.yahoo.com/d/quotes.csv?s=$1&f=l1"
-}
-
 ###### Taken from https://github.com/raine/cli-goodies#aliases
 alias now='date -u +"%Y-%m-%dT%H:%M:%SZ"' # print current datetime as ISO
 
