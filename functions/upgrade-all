@@ -13,11 +13,11 @@ sudo apt-get update && sudo apt-get -y upgrade
 # upgrade mr
 cd ~ && mr up
 
-# Upgrade github repos
-cd $GITHUB_ROOT && mr up
-
 # dotfiles updates
 cd $CUSTOM_ROOT && pip install --upgrade peru
+
+# Upgrade github repos
+cd $GITHUB_ROOT && mr up
 
 # Go back to original folder
 cd $ORIG
