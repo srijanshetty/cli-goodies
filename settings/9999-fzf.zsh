@@ -62,8 +62,15 @@ function bind-git-helper() {
     for c in $@; do
         eval "fzf-g$c-widget() { local result=\$(g$c | join-lines); zle reset-prompt; LBUFFER+=\$result }"
         eval "zle -N fzf-g$c-widget"
-        eval "bindkey '^g^$c' fzf-g$c-widget"
+        eval "bindkey '^k^$c' fzf-g$c-widget"
     done
 }
 bind-git-helper f b t r h
 unset -f bind-git-helper
+
+# # Examples: Get host names
+# function get-host() {
+#     cat $HOME/.ssh/config.d/* | fzf-tmux --ansi | cut -d$'\t' -f2
+# }
+# zle -N get-host
+# bindkey '^k^s' get-host
