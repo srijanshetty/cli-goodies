@@ -37,6 +37,9 @@ _git_cd () {
 }
 alias cd=_git_cd
 
+# Search
+alias ag='ag --path-to-ignore ~/.ignore'
+
 #
 # Plugins and Utilities
 #
