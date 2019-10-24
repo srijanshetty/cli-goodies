@@ -1,3 +1,42 @@
+#
+# Plugins and Utilities
+#
+
+# vcsh specific aliases
+alias vs="vcsh status"
+
+# Search
+alias ag='ag --path-to-ignore ~/.ignore'
+
+# List all global npm packages
+alias npm-list="npm list -g --depth 0"
+
+# mr
+[[ -s ~/.mrenv ]] && source ~/.mrenv
+
+# linuxbrew
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.linuxbrew/sbin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
+# This is for pyenv and YouCompleteMe compatibility
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# source private functions
+[[ -s ~/.private.sh ]] && source ~/.private.sh
+
+###########################################
+# fzf
+###########################################
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
+export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
+
+# -------------
 # GIT heart FZF
 # -------------
 
