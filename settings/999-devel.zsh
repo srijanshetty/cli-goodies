@@ -43,11 +43,6 @@ alias ag='ag --path-to-ignore ~/.ignore'
 #
 # Plugins and Utilities
 #
-# Check for the hub alias and then eval it
-hash hub &>/dev/null && eval "$(hub alias -s)"
-
-# source proxy configuration
-# . ~/.proxyrc
 
 # mr
 [[ -s ~/.mrenv ]] && source ~/.mrenv
