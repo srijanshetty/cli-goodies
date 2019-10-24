@@ -19,5 +19,8 @@ cd $CUSTOM_ROOT && pip install --upgrade peru
 # Upgrade github repos
 cd $GITHUB_ROOT && mr up
 
+# Update installers
+pip install --upgrade pip
+
 # Go back to original folder
 cd $ORIG
