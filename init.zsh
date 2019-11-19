@@ -18,3 +18,6 @@ if [ -d ${0:h}/plugins ]; then
         source $pfunction
     done
 fi
+
+# Load and initialize the completion system ignoring insecure directories.
+autoload -Uz compinit && compinit -i
