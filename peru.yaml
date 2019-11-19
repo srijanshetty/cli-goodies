@@ -2,6 +2,7 @@ imports:
     gulp: functions
     npm: functions
     pip: functions
+    podman: functions
     snips: functions
 
 git module gulp:
@@ -17,6 +18,9 @@ git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
     pick: _pip
     rev: 867c7c10e84ded7c557cc125cdee846df67a8cb2
+
+curl module podman:
+    url: https://raw.githubusercontent.com/containers/libpod/master/completions/zsh/_podman
 
 git module snips:
     url: https://github.com/srijanshetty/snips
