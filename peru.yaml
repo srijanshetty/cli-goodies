@@ -1,14 +1,8 @@
 imports:
-    hub: functions
     gulp: functions
     npm: functions
     pip: functions
-    rvm: functions
     snips: functions
-
-curl module hub:
-    url: https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion
-    move: { "hub.zsh_completion" : "_hub"}
 
 git module gulp:
     url: https://github.com/srijanshetty/gulp-autocompletion-zsh
@@ -23,11 +17,6 @@ git module pip:
     url: https://github.com/srijanshetty/zsh-pip-completion
     pick: _pip
     rev: 867c7c10e84ded7c557cc125cdee846df67a8cb2
-
-git module rvm:
-    url: https://github.com/rvm/rvm
-    export: scripts/extras/completion.zsh/
-    rev: 303bc4ab2234e65045dab44a0f8ec696e81ca6f2
 
 git module snips:
     url: https://github.com/srijanshetty/snips
