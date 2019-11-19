@@ -2,6 +2,7 @@
 # Git
 ###########################################
 alias glg="git lg"
+alias ga="git add"
 alias gs="git status"
 alias gt="git tag"
 alias gc="git checkout"
