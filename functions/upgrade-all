@@ -22,5 +22,8 @@ cd $GITHUB_ROOT && mr up
 # Update installers
 pip install --upgrade pip
 
+# Reset completions
+rm -f ~/.zcompdump; compinit
+
 # Go back to original folder
 cd $ORIG
