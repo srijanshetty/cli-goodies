@@ -25,5 +25,8 @@ pip install --upgrade pip
 # Reset completions
 rm -f ~/.zcompdump; compinit
 
+# Update vim
+vim '+PlugUpdate|q|q'
+
 # Go back to original folder
 cd $ORIG
