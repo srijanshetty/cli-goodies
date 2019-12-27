@@ -13,20 +13,11 @@ eval "$(dircolors ~/.dircolors/dircolors.ansi-light)"
 bindkey "^[." insert-last-word
 
 ###########################################
-# Aliases
+# Source
 ###########################################
 
-# unicode support in tmux
-alias tmux="tmux -u"
-
-# top, the way it should be
-alias top="top -c"
-
-# Quick check for sha
-alias sha='shasum -a 256 '
-
-# ips
-alias ipe='curl ipinfo.io/ip'
+# source private functions
+[[ -s ~/.private.sh ]] && source ~/.private.sh
 
 ###########################################
 # Hooks
