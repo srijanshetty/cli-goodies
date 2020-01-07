@@ -22,3 +22,7 @@ alias sha='shasum -a 256 '
 
 # ips
 alias ipe='curl ipinfo.io/ip'
+
+# podman
+alias pd="podman"
+alias pc="podman-compose"
