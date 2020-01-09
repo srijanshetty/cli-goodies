@@ -74,11 +74,4 @@ if [[ -f ~/.fzf.zsh ]]; then
     }
     bind-git-helper f b t r h
     unset -f bind-git-helper
-
-    # # Examples: Get host names
-    # function get-host() {
-    #     cat $HOME/.ssh/config.d/* | fzf-tmux --ansi | cut -d$'\t' -f2
-    # }
-    # zle -N get-host
-    # bindkey '^k^s' get-host
 fi
