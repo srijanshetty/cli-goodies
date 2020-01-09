@@ -1,5 +1,5 @@
 #
-# Plugins and Utilities
+# Sensible defaults
 #
 
 # vcsh specific aliases
@@ -17,12 +17,16 @@ alias tmux="tmux -u"
 # top, the way it should be
 alias top="top -c"
 
-# Quick check for sha
-alias sha='shasum -a 256 '
-
-# ips
-alias ipe='curl ipinfo.io/ip'
-
 # podman
 alias pd="podman"
 alias pc="podman-compose"
+
+#
+# Utilities
+#
+
+# Quick check for sha
+alias sha='shasum -a 256 '
+
+# external ip
+alias ipe='curl ipinfo.io/ip'
