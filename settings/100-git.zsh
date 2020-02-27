@@ -7,12 +7,18 @@ alias gs="git status"
 alias gt="git tag"
 alias gc="git checkout"
 alias gb="git branch"
+alias gst="git stash"
+
+
 alias gd="git diff"
 alias gdc="git diff --cached"
-alias gst="git stash"
+
 alias gcm="git commit -m"
 alias gca="git commit --amend"
+alias gcf="git commit --fixup"
 alias grv="git remote -v"
+
+alias gra="git rebase -i --autosquash"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
