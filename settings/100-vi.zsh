@@ -1,3 +1,5 @@
+export EDITOR=vi
+
 # vim -> gvim
 alias vi="vim"
 
