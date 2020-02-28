@@ -2,7 +2,7 @@ if [[ -f ~/.fzf.zsh ]]; then
     # Sane defaults
     source ~/.fzf.zsh
     export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
-    export FZF_DEFAULT_COMMAND='git ls-tree -r --name-only HEAD || ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
+    export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
 
     # -------------
     # GIT heart FZF
