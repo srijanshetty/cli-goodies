@@ -1,8 +1,0 @@
-#
-# Show figlet fonts
-#
-# Authors:
-#   Srijan R. Shetty <srijan.shetty+code@gmail.com>
-#
-
-find /usr/share/figlet -name "*.?lf" -exec basename {}  \; | sed -e "s/\..lf$//" | xargs -I{} toilet -f {} {}
