@@ -1,8 +1,0 @@
-#
-# Upload a file to transfer.sh
-#
-# Authors:
-#   transfer.sh
-#
-
-curl --upload-file "$1" "http://transfer.sh/${1}"
