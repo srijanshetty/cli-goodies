@@ -14,3 +14,14 @@ function wifi-restart() {
     local current=$(nmcli d wifi list | grep '*' | awk '{print $2}')
     nmcli c down $current && nmcli c up $current
 }
+
+# Get the current FX rate
+function fx() {
+    local base=${2:-USD}
+
+    if has http &> /dev/null; then
+        http "https://api.exchangeratesapi.io/latest?symbols=${1}&base=${base}" -b
+    else
+        curl "https://api.exchangeratesapi.io/latest?symbols=${1}&base=${base}" | jq
+    fi
+}
