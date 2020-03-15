@@ -4,6 +4,21 @@ if [[ -f ~/.fzf.zsh ]]; then
     export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
     export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
 
+    function join-lines() {
+        local item
+        while read item; do
+            echo -n "${(q)item} "
+        done
+    }
+
+    # This is for completion of ssh hosts
+    function list-hosts() {
+        cat <(cat ~/.ssh/config ~/.ssh/config.d/* /etc/ssh/ssh_config 2> /dev/null | command grep -i '^\s*host\(name\)\? ' | command grep -v '[*?]' | awk '{for (i = 2; i <= NF; i++) print $1 " " $i}') | awk '{if (length($2) > 0) {print $2}}' | sort -u | fzf-down --ansi --multi --tac --preview-window right:70%
+    }
+
+    zle -N list-hosts
+    bindkey '^k^s' list-hosts
+
     # -------------
     # GIT heart FZF
     # -------------
@@ -56,13 +71,6 @@ if [[ -f ~/.fzf.zsh ]]; then
             --preview 'git log --oneline --graph --date=short --pretty="format:%C(auto)%cd %h%d %s" {1} | head -200' |
             cut -d$'\t' -f1
         }
-
-    function join-lines() {
-        local item
-        while read item; do
-            echo -n "${(q)item} "
-        done
-    }
 
     function bind-git-helper() {
         local c
