@@ -8,3 +8,9 @@ function copy-last-command() {
 
 # count occurences
 alias count='sort | uniq -c | sort -n'
+
+# Restart a WiFi connection
+function wifi-restart() {
+    local current=$(nmcli d wifi list | grep '*' | awk '{print $2}')
+    nmcli c down $current && nmcli c up $current
+}
