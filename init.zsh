@@ -9,15 +9,17 @@ for file in ${0:h}/settings/**/*(.); do
 done
 
 #
-# Plugins
+# Functions and Completions
 #
 
+# Add completions to $fpath.
+fpath=("${0:h}/functions" $fpath)
+
 # Load functions which are not completions
-if [ -d ${0:h}/plugins ]; then
-    for pfunction in ${0:h}/plugins/**/*.plugin.zsh; do
-        source $pfunction
-    done
-fi
+for pfunction in ${0:h}/functions/^[_.]*; do
+  func=$(echo $pfunction | tr '/' ' ' | awk '{print $NF}')
+  autoload -Uz "$func"
+done
 
 # Load and initialize the completion system ignoring insecure directories.
 autoload -Uz compinit && compinit -i
