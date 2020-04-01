@@ -45,10 +45,10 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'tmux' \
   'zsh-dwim' \
-  'cli-goodies' \
   'python' \
   'node' \
   'fasd' \
+  'cli-goodies' \
   'zsh-autoenv'
 
 # node
