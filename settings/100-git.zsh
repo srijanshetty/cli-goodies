@@ -6,7 +6,7 @@ alias ga="git add"
 alias gs="git status"
 alias gt="git tag"
 alias gc="git checkout"
-alias gb="git branch"
+alias gb="git branch -vv"
 alias gst="git stash"
 
 
