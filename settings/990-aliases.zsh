@@ -11,8 +11,8 @@ alias ag='ag --path-to-ignore ~/.ignore'
 # List all global npm packages
 alias npm-list="npm list -g --depth 0"
 
-# unicode support in tmux
-alias tmux="tmux -u"
+# (-u) unicode support and color support (-2)
+alias tmux="tmux -u -2"
 
 # top, the way it should be
 alias top="top -c"
