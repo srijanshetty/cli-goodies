@@ -6,9 +6,6 @@ function copy-last-command() {
   fc -ln -1 | awk "{\$1=\$1}1" ORS="" | pbcopy
 }
 
-# count occurences
-alias count='sort | uniq -c | sort -n'
-
 # Restart a WiFi connection
 function wifi-restart() {
     local current=$(nmcli d wifi list | grep '*' | awk '{print $2}')
