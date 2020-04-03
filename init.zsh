@@ -17,8 +17,16 @@ fpath=("${0:h}/functions" $fpath)
 
 # Load functions which are not completions
 for pfunction in ${0:h}/functions/^[_.]*; do
-  func=$(echo $pfunction | tr '/' ' ' | awk '{print $NF}')
-  autoload -Uz "$func"
+    func=$(echo $pfunction | tr '/' ' ' | awk '{print $NF}')
+    autoload -Uz "$func"
+done
+
+# Add external to $fpath
+fpath=("${0:h}/external" $fpath)
+
+# Source functions which are not completions
+for pfunction in ${0:h}/functions/^[_.]*; do
+    source $pfunction
 done
 
 # Load and initialize the completion system ignoring insecure directories.
