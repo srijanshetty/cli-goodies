@@ -9,6 +9,7 @@ ORIG=$PWD
 
 # Linux updates
 sudo apt-get update && sudo apt-get -y upgrade
+sudo snap refresh
 
 # upgrade mr
 cd ~ && mr up
