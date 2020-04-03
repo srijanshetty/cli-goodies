@@ -15,6 +15,7 @@ cd ~ && mr up
 
 # Update installers
 pip install --upgrade pip
+npm install -g npm
 
 # Reset completions
 rm -f ~/.zcompdump; compinit
