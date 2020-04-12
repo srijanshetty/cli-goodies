@@ -25,7 +25,7 @@ done
 fpath=("${0:h}/external" $fpath)
 
 # Source functions which are not completions
-for pfunction in ${0:h}/functions/^[_.]*; do
+for pfunction in ${0:h}/external/^[_.]*; do
     source $pfunction
 done
 
