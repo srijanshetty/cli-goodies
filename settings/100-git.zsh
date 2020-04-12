@@ -15,10 +15,12 @@ alias gdc="git diff --cached"
 
 alias gcm="git commit -m"
 alias gca="git commit --amend"
+alias gcs="git commit --squash"
 alias gcf="git commit --fixup"
-alias grv="git remote -v"
 
 alias gra="git rebase -i --autosquash"
+
+alias grv="git remote -v"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
