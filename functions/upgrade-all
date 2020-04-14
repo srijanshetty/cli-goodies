@@ -2,7 +2,7 @@
 # Upgrade everything
 #
 # Authors:
-#   transfer.sh
+#   Srijan R. Shetty
 #
 
 ORIG=$PWD
