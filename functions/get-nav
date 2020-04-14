@@ -1,0 +1,8 @@
+#
+# Get NAV for Indian MF and open in fzf
+#
+# Authors:
+#   Srijan R. Shetty
+#
+
+http https://www.amfiindia.com/spages/NAVAll.txt | cut -d';' -f4,5 | tr ';' '\t' | fzf
