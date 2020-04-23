@@ -3,4 +3,4 @@ function open-pet() {
     pet exec
 }
 zle -N open-pet
-bindkey '^k^k' open-pet
+bindkey '^k^e' open-pet
