@@ -27,3 +27,5 @@ alias sha='shasum -a 256 '
 
 # external ip
 alias ipe='curl ipinfo.io/ip'
+
+alias cast2gif='xdg-open https://dstein64.github.io/gifcast/'
