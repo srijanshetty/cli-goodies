@@ -2,9 +2,6 @@
 # Sensible defaults
 #
 
-# vcsh specific aliases
-alias vs="vcsh status"
-
 # Search
 alias ag='ag --path-to-ignore ~/.ignore'
 
