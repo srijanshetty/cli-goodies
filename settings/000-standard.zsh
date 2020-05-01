@@ -15,6 +15,11 @@ eval "$(dircolors ~/.dircolors/dircolors.ansi-light)"
 # Bash like Meta + dot
 bindkey "^[." insert-last-word
 
+# Enable Ctrl-f to edit command line
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^f' edit-command-line
+
 ###########################################
 # Source
 ###########################################
