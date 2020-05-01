@@ -28,6 +28,12 @@ bindkey '^f' edit-command-line
 [[ -s ~/.private.sh ]] && source ~/.private.sh
 
 ###########################################
+# Use vi as EDITOR/VISUAL
+###########################################
+export EDITOR=vi
+export VISUAL=vi
+
+###########################################
 # Hooks
 ###########################################
 
