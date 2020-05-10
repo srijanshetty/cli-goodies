@@ -2,7 +2,7 @@ if [[ -f ~/.fzf.zsh ]]; then
     # Sane defaults
     source ~/.fzf.zsh
     export FZF_DEFAULT_OPTS='-m --height 60% --layout=reverse --border'
-    export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+    export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 
     function join-lines() {
         local item
