@@ -22,6 +22,8 @@ alias gra="git rebase -i --autosquash"
 
 alias grv="git remote -v"
 
+alias gp="git pull --autostash"
+
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
 _git_cd () {
