@@ -2,6 +2,9 @@
 # Sensible defaults
 #
 
+# For when you copy commands with $
+alias \$=' '
+
 # Search
 alias ag='ag --path-to-ignore ~/.ignore'
 
