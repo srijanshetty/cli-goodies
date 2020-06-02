@@ -27,6 +27,9 @@ bindkey '^f' edit-command-line
 # source private functions
 [[ -s ~/.private.sh ]] && source ~/.private.sh
 
+# secrets
+[[ -s ~/.secrets.sh ]] && source ~/.secrets.sh
+
 ###########################################
 # Use vi as EDITOR/VISUAL
 ###########################################
