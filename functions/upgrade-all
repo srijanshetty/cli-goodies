@@ -11,6 +11,9 @@ ORIG=$PWD
 sudo apt-get -qq update && sudo apt-get -y upgrade
 sudo snap refresh
 
+# Update deno
+deno upgrade
+
 # upgrade mr
 cd ~ && mr up
 
