@@ -33,8 +33,8 @@ bindkey '^f' edit-command-line
 ###########################################
 # Use vi as EDITOR/VISUAL
 ###########################################
-export EDITOR=vi
-export VISUAL=vi
+export EDITOR=vim
+export VISUAL=vim
 
 ###########################################
 # Hooks
