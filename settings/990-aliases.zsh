@@ -21,6 +21,9 @@ alias top="top -c"
 alias pd="podman"
 alias pc="podman-compose"
 
+# qutebrowser
+alias b="qutebrowser"
+
 #
 # Utilities
 #
