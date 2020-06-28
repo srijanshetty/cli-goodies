@@ -21,8 +21,11 @@ alias top="top -c"
 alias pd="podman"
 alias pc="podman-compose"
 
+# Jail some standard programs
 # qutebrowser
-alias b="qutebrowser"
+alias b="firejail qutebrowser"
+alias vlc="firejail vlc"
+alias z="firejail zathura"
 
 #
 # Utilities
