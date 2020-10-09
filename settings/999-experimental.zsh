@@ -22,3 +22,5 @@ function fx() {
         curl "https://api.exchangeratesapi.io/latest?symbols=${1}&base=${base}" | jq
     fi
 }
+
+eval "$(fnm env --multi)"
