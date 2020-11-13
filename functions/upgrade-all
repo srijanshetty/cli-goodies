@@ -11,9 +11,6 @@ ORIG=$PWD
 sudo apt-get -qq update && sudo apt-get -y upgrade
 sudo snap refresh
 
-# Update deno
-deno upgrade
-
 # upgrade mr
 cd ~ && mr up
 
@@ -29,6 +26,11 @@ vim '+PlugUpdate|q|q'
 
 # Upgrade github repos
 cd $GITHUB_ROOT && mr up
+
+# Update private funcs
+if hash private-upgrade &> /dev/null; then
+    private-upgrade
+fi
 
 # Go back to original folder
 cd $ORIG
