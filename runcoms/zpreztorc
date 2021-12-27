@@ -47,8 +47,8 @@ zstyle ':prezto:load' pmodule \
   'zsh-dwim' \
   'python' \
   'fasd' \
-  'cli-goodies' \
-  'zsh-autoenv'
+  'homebrew' \
+  'cli-goodies'
 
 # node
 
