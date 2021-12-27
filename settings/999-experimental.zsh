@@ -23,4 +23,4 @@ function fx() {
     fi
 }
 
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
