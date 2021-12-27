@@ -3,7 +3,7 @@
 ###########################################
 #
 # dircolors
-eval "$(dircolors ~/.dircolors/dircolors.ansi-light)"
+eval "$(hash dircolors &> /dev/null && dircolors ~/.dircolors/dircolors.ansi-light)"
 
 # Ensure colors are support in TMUX
 [ -n "$TMUX" ] && export TERM=xterm-256color
