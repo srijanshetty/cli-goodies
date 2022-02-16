@@ -48,6 +48,7 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'fasd' \
   'homebrew' \
+  'zsh-fzf-history-search' \
   'cli-goodies'
 
 # node
