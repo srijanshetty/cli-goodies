@@ -25,6 +25,7 @@ rm -f ~/.zcompdump; compinit
 
 # Update vim
 vim '+PlugUpdate|q|q'
+nvim '+PlugUpdate|q|q'
 
 # Upgrade github repos
 cd $GITHUB_ROOT && mr up
