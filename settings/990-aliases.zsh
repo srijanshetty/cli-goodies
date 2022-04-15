@@ -28,6 +28,12 @@ alias vlc="firejail vlc"
 alias z="firejail zathura"
 
 #
+# Conditional aliases
+#
+alias ls="exa"
+
+
+#
 # Utilities
 #
 
