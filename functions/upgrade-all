@@ -13,6 +13,11 @@ if hash apt &> /dev/null; then
     sudo snap refresh
 fi
 
+# Upgrade brew
+if hash brew &> /dev/null; then
+    brew update
+fi
+
 # upgrade mr
 cd ~ && mr up
 
