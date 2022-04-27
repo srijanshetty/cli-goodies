@@ -14,9 +14,9 @@ if hash apt &> /dev/null; then
 fi
 
 # Upgrade brew
-if hash brew &> /dev/null; then
-    brew update
-fi
+# if hash brew &> /dev/null; then
+#     brew update
+# fi
 
 # upgrade mr
 cd ~ && mr up
