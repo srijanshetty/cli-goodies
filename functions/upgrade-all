@@ -8,7 +8,7 @@
 ORIG=$PWD
 
 # Linux updates
-if hash apt &> /dev/null; then
+if hash apt-get &> /dev/null; then
     sudo apt -qq update && sudo apt-get -y upgrade
     sudo snap refresh
 fi
