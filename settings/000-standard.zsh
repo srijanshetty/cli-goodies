@@ -45,7 +45,7 @@ export VISUAL=vim
 
 # Store an install log of all npm/pip/apt-get installs
 preexec() {
-    if [[ $1 =~ "(npm|gem|pip|brew|go|snap|apt|apt-get) (i|install|tap|get) " ]]; then
+    if [[ $1 =~ "(npm|gem|pip|brew|go|snap|apt|apt-get|pipx) (i|install|tap|get) " ]]; then
         echo "$1" >> "${HOME}/.install-log"
     fi
 
