@@ -14,6 +14,7 @@ eval "$(hash dircolors &> /dev/null && dircolors ~/.dircolors/dircolors.ansi-lig
 
 # Bash like Meta + dot
 bindkey "^[." insert-last-word
+bindkey "^[altdot" insert-last-word
 
 # Enable Ctrl-f to edit command line
 autoload -U edit-command-line
