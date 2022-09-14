@@ -25,7 +25,6 @@ alias pc="podman-compose"
 # qutebrowser
 alias b="firejail qutebrowser"
 alias vlc="firejail vlc"
-alias z="firejail zathura"
 
 #
 # Conditional aliases
