@@ -38,7 +38,3 @@ alias watch="viddy"
 
 # Quick check for sha
 alias sha='shasum -a 256 '
-
-# external ip
-alias ipe='dig ip +short @dns.toys'
-alias weather='dig bengaluru.weather +short @dns.toys'
