@@ -3,6 +3,9 @@ function define() {
     dig +short '$1.dict' @dns.toys
 }
 
+# Generic alias
+alias dy='dig +short @dns.toys'
+
 # external ip
 alias ipe='dig ip +short @dns.toys'
 
