@@ -40,4 +40,5 @@ alias watch="viddy"
 alias sha='shasum -a 256 '
 
 # external ip
-alias ipe='curl ipinfo.io/ip'
+alias ipe='dig ip +short @dns.toys'
+alias weather='dig bengaluru.weather +short @dns.toys'
