@@ -10,10 +10,10 @@ alias dy='dig +short @dns.toys'
 alias ipe='dig ip +short @dns.toys'
 
 # Get the weather in bangalore
-alias bw='dig bengaluru.weather +short @dns.toys'
+alias w-blr='dig bengaluru.weather +short @dns.toys'
 
 # Get time
-alias dub='dig dubai.time +short @dns.toys'
-alias ldn='dig london.time +short @dns.toys'
-alias sgp='dig singapore.time +short @dns.toys'
-alias nyc='dig newyork.time +short @dns.toys'
+alias t-dub='dig dubai.time +short @dns.toys'
+alias t-ldn='dig london.time +short @dns.toys'
+alias t-sgp='dig singapore.time +short @dns.toys'
+alias t-nyc='dig newyork.time +short @dns.toys'
