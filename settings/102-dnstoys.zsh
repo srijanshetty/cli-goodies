@@ -4,16 +4,16 @@ function define() {
 }
 
 # Generic alias
-alias dy='dig +short @dns.toys'
+alias dt='dig +short @dns.toys'
 
 # external ip
 alias ipe='dig ip +short @dns.toys'
 
 # Get the weather in bangalore
-alias w-blr='dig bengaluru.weather +short @dns.toys'
+alias we-blr='dig bengaluru.weather +short @dns.toys'
 
 # Get time
-alias t-dub='dig dubai.time +short @dns.toys'
-alias t-ldn='dig london.time +short @dns.toys'
-alias t-sgp='dig singapore.time +short @dns.toys'
-alias t-nyc='dig newyork.time +short @dns.toys'
+alias tz-dub='dig dubai.time +short @dns.toys'
+alias tz-ldn='dig london.time +short @dns.toys'
+alias tz-sgp='dig singapore.time +short @dns.toys'
+alias tz-nyc='dig newyork.time +short @dns.toys'
