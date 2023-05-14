@@ -26,7 +26,7 @@ alias gp="git pull --autostash"
 
 # If you give the command cd, then it goes to the git root if in a git directory
 # or goes to $HOME of the user if not in a git directory
-_git_cd () {
+gcd () {
     if [[ "$1" != "" ]]; then
         cd "$@"
     else
@@ -43,9 +43,4 @@ _git_cd () {
         fi
     fi
 }
-alias cd=_git_cd
-
-function gist-clone() {
-  gist_id=`echo "$1" | sed -e 's/.*\///g'`
-  git clone git@gist.github.com:/$gist_id.git $2
-}
+# alias cd=_git_cd

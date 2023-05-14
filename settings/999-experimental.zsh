@@ -17,4 +17,14 @@ function cgrok() {
     cloudflared tunnel --url "http://localhost:${port}"
 }
 
+function z() {
+  local dir
+  dir="$(fasd -Rdl "$1" | fzf -1 -0 --no-sort +m)" && cd "${dir}" || return 1
+}
+
+function gist-clone() {
+  gist_id=`echo "$1" | sed -e 's/.*\///g'`
+  git clone git@gist.github.com:/$gist_id.git $2
+}
+
 eval "$(fnm env)"
