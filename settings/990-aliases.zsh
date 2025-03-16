@@ -29,7 +29,6 @@ alias vlc="firejail vlc"
 #
 # Conditional aliases
 #
-alias ls="exa"
 alias watch="viddy"
 
 #
