@@ -27,11 +27,6 @@ alias b="firejail qutebrowser"
 alias vlc="firejail vlc"
 
 #
-# Conditional aliases
-#
-alias watch="viddy"
-
-#
 # Utilities
 #
 
