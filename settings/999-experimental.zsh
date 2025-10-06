@@ -27,4 +27,6 @@ function gist-clone() {
   git clone git@gist.github.com:/$gist_id.git $2
 }
 
-eval "$(fnm env)"
+if which fnm > /dev/null; then
+  eval "$(fnm env)"
+fi
